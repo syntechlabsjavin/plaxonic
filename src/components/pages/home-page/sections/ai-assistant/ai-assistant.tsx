@@ -1,4 +1,4 @@
-import { ArrowUp, Mic, Paperclip, Sparkles } from "lucide-react";
+import { ArrowUp, Mic, Paperclip } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const PLACEHOLDER_TOPICS = [

@@ -1,8 +1,6 @@
 import {
   ArrowRight,
   ArrowUpRight,
-  ChevronLeft,
-  ChevronRight,
 } from "lucide-react";
 import { useRef, useState } from "react";
 
@@ -147,15 +145,6 @@ const InsightsSection = () => {
       ? INSIGHTS
       : INSIGHTS.filter((item) => item.type === activeTab);
 
-  const maxIndex = Math.max(0, filteredInsights.length - 1);
-
-  const handlePrev = () => {
-    setSlideIndex((i) => Math.max(0, i - 1));
-  };
-
-  const handleNext = () => {
-    setSlideIndex((i) => Math.min(maxIndex, i + 1));
-  };
 
   const handleTabChange = (tab: FilterTab) => {
     setActiveTab(tab);
