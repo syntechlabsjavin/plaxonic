@@ -25,7 +25,7 @@ interface NavbarProps {
   onAskArchI?: () => void;
 }
 
-export default function Navbar({ onAskArchI }: NavbarProps) {
+const Navbar=({ onAskArchI }: NavbarProps)=> {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
@@ -177,3 +177,5 @@ export default function Navbar({ onAskArchI }: NavbarProps) {
     </header>
   );
 }
+
+export default Navbar;

@@ -1,13 +1,9 @@
-import Footer from "./components/footer/footer";
-import Navbar from "./components/navbar/navbar";
-import HomePage from "./components/pages/home-page/home-page";
+import AppRouter from "./components/router/app-router";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <HomePage />
-      <Footer />
+    <AppRouter />
     </>
   );
 };

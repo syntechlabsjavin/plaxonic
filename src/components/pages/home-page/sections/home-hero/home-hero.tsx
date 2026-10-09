@@ -36,7 +36,7 @@ function useRotatingIndex(length: number, intervalMs: number): number {
   return index;
 }
 
-const HeroSection = () => {
+const HomeHero = () => {
   const patternId = useId();
   const wordIndex = useRotatingIndex(ROTATING_WORDS.length, WORD_INTERVAL_MS);
   return (
@@ -159,4 +159,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HomeHero;
