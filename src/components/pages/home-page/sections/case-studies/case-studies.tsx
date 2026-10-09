@@ -92,12 +92,7 @@ const BackgroundPattern = () => (
           height="0.4"
           patternUnits="userSpaceOnUse"
         >
-          <circle
-            cx="0.2"
-            cy="0.2"
-            r="0.06"
-            fill="#9ca3af"
-          />
+          <circle cx="0.2" cy="0.2" r="0.06" fill="#9ca3af" />
         </pattern>
       </defs>
 
@@ -124,16 +119,17 @@ const CaseStudies = () => {
   const totalStudies = CASE_STUDIES.length;
   const activeStudy = CASE_STUDIES[activeIndex];
 
+  const canGoPrev = activeIndex > 0;
+  const canGoNext = activeIndex < totalStudies - 1;
+
   const handlePrevious = () => {
-    setActiveIndex((current) =>
-      current === 0 ? totalStudies - 1 : current - 1
-    );
+    if (!canGoPrev) return;
+    setActiveIndex((current) => Math.max(0, current - 1));
   };
 
   const handleNext = () => {
-    setActiveIndex((current) =>
-      current === totalStudies - 1 ? 0 : current + 1
-    );
+    if (!canGoNext) return;
+    setActiveIndex((current) => Math.min(totalStudies - 1, current + 1));
   };
 
   return (
@@ -153,8 +149,7 @@ const CaseStudies = () => {
               </div>
 
               <h2 className="font-inter text-4xl font-bold leading-[1.1] tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl">
-                Case{" "}
-                <span className="text-gray-300">Studies</span>.
+                Case <span className="text-gray-300">Studies</span>.
               </h2>
             </div>
 
@@ -164,7 +159,6 @@ const CaseStudies = () => {
                 className="group inline-flex items-center gap-2 border border-[#1a1f35] px-6 py-3 text-sm font-semibold uppercase tracking-wider text-[#1a1f35] transition-colors duration-300 hover:bg-[#1a1f35] hover:text-white lg:px-5 lg:py-2.5 lg:text-[13px] 2xl:px-6 2xl:py-3 2xl:text-sm"
               >
                 View All Case Studies
-
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:rotate-45 lg:h-[15px] lg:w-[15px] 2xl:h-4 2xl:w-4" />
               </a>
             </div>
@@ -172,11 +166,9 @@ const CaseStudies = () => {
 
           <div className="mt-8 flex max-w-2xl gap-4">
             <div className="w-[3px] shrink-0 bg-primary" />
-
             <p className="text-base text-gray-600 md:text-lg lg:text-base 2xl:text-lg">
-              Real challenges, proven solutions. See how we've
-              helped businesses transform their operations and
-              achieve measurable results.
+              Real challenges, proven solutions. See how we've helped businesses
+              transform their operations and achieve measurable results.
             </p>
           </div>
         </div>
@@ -217,19 +209,16 @@ const CaseStudies = () => {
                   className="group mb-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                 >
                   Read the full case study
-
                   <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:rotate-45" />
                 </a>
 
                 {/* Highlight */}
                 <div className="flex items-start gap-4">
                   <div className="h-16 w-1 shrink-0 rounded-full bg-primary" />
-
                   <div>
                     <div className="text-2xl font-bold text-primary sm:text-3xl lg:text-3xl 2xl:text-4xl">
                       {activeStudy.metric}
                     </div>
-
                     <div className="mt-1 text-sm leading-snug text-gray-500">
                       {activeStudy.technologies}
                     </div>
@@ -270,7 +259,6 @@ const CaseStudies = () => {
                       d="M32 1.96094L23.7856 9.27625L9.76804 20.8009L0.858887 9.52145L6.00821 8.66323L12.0566 16.2646L32 1.96094Z"
                       fill="#e5e5e5"
                     />
-
                     <path
                       d="M0 30.0376L13.0776 22.0685L19.0852 29.6698L24.2754 28.8116L15.3254 17.5321L0 30.0376Z"
                       fill="#e5e5e5"
@@ -313,8 +301,16 @@ const CaseStudies = () => {
               <button
                 type="button"
                 onClick={handlePrevious}
+                disabled={!canGoPrev}
                 aria-label="Previous case study"
-                className="flex h-12 w-12 items-center justify-center bg-primary text-white transition-all duration-300 hover:bg-primary-dark"
+                className={`
+                  flex h-12 w-12 items-center justify-center bg-primary text-white transition-all duration-300
+                  ${
+                    !canGoPrev
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-primary-dark"
+                  }
+                `}
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
@@ -322,8 +318,16 @@ const CaseStudies = () => {
               <button
                 type="button"
                 onClick={handleNext}
+                disabled={!canGoNext}
                 aria-label="Next case study"
-                className="flex h-12 w-12 items-center justify-center bg-primary text-white transition-all duration-300 hover:bg-primary-dark"
+                className={`
+                  flex h-12 w-12 items-center justify-center bg-primary text-white transition-all duration-300
+                  ${
+                    !canGoNext
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-primary-dark"
+                  }
+                `}
               >
                 <ChevronRight className="h-5 w-5" />
               </button>

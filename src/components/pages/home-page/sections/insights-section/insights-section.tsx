@@ -1,8 +1,10 @@
 import {
   ArrowRight,
   ArrowUpRight,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type InsightCategory = "Blog" | "News";
 
@@ -135,16 +137,64 @@ type FilterTab = "Featured" | "Blog" | "News";
 
 const FILTER_TABS: FilterTab[] = ["Featured", "Blog", "News"];
 
+/** Matches the card widths in CSS:
+ *  mobile  → 1 card
+ *  md      → 2 cards
+ *  lg+     → 3 cards
+ */
+function useVisibleCount(): number {
+  const [count, setCount] = useState(1);
+
+  useEffect(() => {
+    const update = () => {
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        setCount(3);
+      } else if (window.matchMedia("(min-width: 768px)").matches) {
+        setCount(2);
+      } else {
+        setCount(1);
+      }
+    };
+
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  return count;
+}
+
 const InsightsSection = () => {
   const [activeTab, setActiveTab] = useState<FilterTab>("Featured");
   const [slideIndex, setSlideIndex] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
+  const visibleCount = useVisibleCount();
 
   const filteredInsights =
     activeTab === "Featured"
       ? INSIGHTS
       : INSIGHTS.filter((item) => item.type === activeTab);
 
+  // How far we can slide before the last card is fully in view
+  const maxIndex = Math.max(0, filteredInsights.length - visibleCount);
+
+  // Clamp index if filter / resize shrinks the list
+  useEffect(() => {
+    setSlideIndex((i) => Math.min(i, maxIndex));
+  }, [maxIndex]);
+
+  const canGoPrev = slideIndex > 0;
+  const canGoNext = slideIndex < maxIndex;
+
+  const handlePrev = () => {
+    if (!canGoPrev) return;
+    setSlideIndex((i) => Math.max(0, i - 1));
+  };
+
+  const handleNext = () => {
+    if (!canGoNext) return;
+    setSlideIndex((i) => Math.min(maxIndex, i + 1));
+  };
 
   const handleTabChange = (tab: FilterTab) => {
     setActiveTab(tab);
@@ -225,7 +275,7 @@ const InsightsSection = () => {
               className="flex items-stretch transition-transform duration-500 ease-out"
               style={{
                 gap: "3rem",
-                transform: `translateX(calc(-${slideIndex * 100}% - ${slideIndex * 3}rem))`,
+                transform: `translateX(calc(-${slideIndex * (100 / visibleCount)}% - ${slideIndex * 3}rem))`,
               }}
             >
               {filteredInsights.map((card) => (
@@ -266,7 +316,7 @@ const InsightsSection = () => {
                           ))}
                         </div>
 
-                        <h3 className="text-xl lg:text-xl 2xl:text-2xl font-medium text-gray-900 mb-3 line-clamp-2 group-hover:text-primary transition-colors min-h-[40px] leading-tight">
+                        <h3 className="text-xl lg:text-xl 2xl:text-2xl font-medium text-gray-900 mb-3 line-clamp-2 group-hover:text-primary transition-colors min-h-[50px] leading-tight">
                           {card.title}
                         </h3>
 
@@ -287,6 +337,42 @@ const InsightsSection = () => {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex items-center justify-end gap-2 mt-10">
+            <button
+              type="button"
+              onClick={handlePrev}
+              disabled={!canGoPrev}
+              className={`
+                w-12 h-12 flex items-center justify-center bg-primary text-white transition-all duration-300
+                ${
+                  !canGoPrev
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-primary-dark"
+                }
+              `}
+              aria-label="Previous insight"
+            >
+              <ChevronLeft className="w-5 h-5" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={handleNext}
+              disabled={!canGoNext}
+              className={`
+                w-12 h-12 flex items-center justify-center bg-primary text-white transition-all duration-300
+                ${
+                  !canGoNext
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-primary-dark"
+                }
+              `}
+              aria-label="Next insight"
+            >
+              <ChevronRight className="w-5 h-5" aria-hidden="true" />
+            </button>
           </div>
         </div>
       </div>
