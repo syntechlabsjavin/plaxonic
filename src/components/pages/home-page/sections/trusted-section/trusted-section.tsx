@@ -71,8 +71,6 @@ const TrustedSection = () => {
     if (!section || !textEl || !xEl || !cardsWrapper) return;
 
     const ctx = gsap.context(() => {
-      // ---------- INITIAL STATE (matches live site at pin start) ----------
-      // X = full size, centered. Text = hidden off-left. Cards = hidden below.
       gsap.set(textEl, {
         xPercent: -116,
         scale: 0.7,
@@ -94,38 +92,38 @@ const TrustedSection = () => {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "+=3200", // total scroll distance while pinned
+          end: "+=3200",
           pin: true,
           scrub: 1,
           anticipatePin: 1,
+          // Prevent pin-spacer from expanding the page width
+          pinSpacing: true,
         },
       });
 
-      // ===== PHASE 1 (0 → ~0.35): text slides in, X shrinks & moves right =====
+      // PHASE 1
       tl.to(
         textEl,
         {
           xPercent: 0,
           opacity: 1,
-          // scale stays 0.7 in this phase
           ease: "none",
           duration: 0.35,
         },
         0,
       );
-
       tl.to(
         xEl,
         {
           scale: 0.4,
-          x: 310, // moves toward the right
+          x: 310,
           ease: "none",
           duration: 0.35,
         },
         0,
       );
 
-      // ===== PHASE 2 (0.35 → ~0.55): text scales up to 1, X fades out =====
+      // PHASE 2
       tl.to(
         textEl,
         {
@@ -135,7 +133,6 @@ const TrustedSection = () => {
         },
         0.35,
       );
-
       tl.to(
         xEl,
         {
@@ -148,7 +145,7 @@ const TrustedSection = () => {
         0.35,
       );
 
-      // ===== PHASE 3 (0.55 → 1): cards fade in & scroll up, text becomes ghost =====
+      // PHASE 3
       tl.to(
         cardsWrapper,
         {
@@ -159,7 +156,6 @@ const TrustedSection = () => {
         },
         0.52,
       );
-
       tl.to(
         textEl,
         {
@@ -169,7 +165,6 @@ const TrustedSection = () => {
         },
         0.55,
       );
-
       tl.to(
         cardsWrapper,
         {
@@ -187,10 +182,12 @@ const TrustedSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-white min-h-screen flex items-center overflow-hidden relative"
+      className="w-full max-w-[100vw] bg-white min-h-screen flex items-center overflow-hidden relative"
+      style={{ overflowX: "hidden" }}
     >
-      {/* ========== Background layers ========== */}
+      {/* Clip everything inside so GSAP transforms never expand page width */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Background layers */}
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{
@@ -258,13 +255,13 @@ const TrustedSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/60 pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-transparent to-white/40 pointer-events-none" />
 
-      {/* ========== Main content ========== */}
-      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 w-full relative z-10 min-h-screen flex items-center">
-        {/* TEXT — starts hidden (opacity 0, off-left). Never shows under large X. */}
+      {/* Main content — also clipped */}
+      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 w-full relative z-10 min-h-screen flex items-center overflow-hidden">
+        {/* TEXT */}
         <div
           ref={textRef}
-          className="absolute inset-0 flex items-center z-10 px-4 sm:px-6 lg:px-8 xl:px-16"
-          style={{ opacity: 0 }} // initial CSS fallback before GSAP runs
+          className="absolute inset-0 flex items-center z-10 px-4 sm:px-6 lg:px-8 xl:px-16 overflow-hidden"
+          style={{ opacity: 0 }}
         >
           <p className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:[font-size:3.25rem] lg:[line-height:1.2] 2xl:[font-size:4rem] font-medium text-gray-900 max-w-4xl">
             Trusted by global enterprises across{" "}
@@ -274,23 +271,23 @@ const TrustedSection = () => {
           </p>
         </div>
 
-        {/* X LOGO — starts full size & centered. Sits above text (z-20). */}
+        {/* X LOGO */}
         <div
           ref={xRef}
-          className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none"
+          className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none overflow-hidden"
         >
           <img
             src="https://plaxonic.com/plaxonic-X.webp"
             alt="Plaxonic X"
-            className="w-[240px] xs:w-[320px] sm:w-[450px] md:w-[650px] lg:w-[850px] h-auto select-none"
+            className="w-[240px] xs:w-[320px] sm:w-[450px] md:w-[650px] lg:w-[850px] h-auto select-none max-w-none"
             draggable={false}
           />
         </div>
 
-        {/* STATS CARDS — start below viewport, scroll up later */}
+        {/* STATS CARDS */}
         <div
           ref={cardsWrapperRef}
-          className="absolute inset-x-0 top-0 z-30 px-4 sm:px-6 lg:px-8 xl:px-16 pointer-events-none"
+          className="absolute inset-x-0 top-0 z-30 px-4 sm:px-6 lg:px-8 xl:px-16 pointer-events-none overflow-hidden"
           style={{ opacity: 0 }}
         >
           <div
@@ -300,13 +297,13 @@ const TrustedSection = () => {
             {STAT_CARDS.map((card) => (
               <div
                 key={card.value}
-                className="absolute w-[70%] sm:w-[48%] lg:w-[32%] pointer-events-auto overflow-hidden bg-cover bg-center border border-gray-200"
+                className="absolute w-[85%] sm:w-[48%] lg:w-[32%] pointer-events-auto overflow-hidden bg-cover bg-center border border-gray-200"
                 style={{
                   backgroundImage: `url("${card.bgImage}")`,
                   height: 430,
                   top: card.top,
                   left: card.left === "auto" ? undefined : card.left,
-                  right: card.left === "auto" ? "10%" : undefined,
+                  right: card.left === "auto" ? "0%" : undefined,
                 }}
               >
                 <div className="relative z-10 p-4 sm:p-6 lg:p-6 2xl:p-8 h-full flex flex-col">
