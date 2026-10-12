@@ -16,6 +16,7 @@ import Telecommunications from "../pages/who-we-serve/telecommunications/telecom
 import GovernmentPublicSector from "../pages/who-we-serve/government-public-sector/government-public-sector";
 import Restaurant from "../pages/who-we-serve/restaurant/restaurant";
 import Manufacturing from "../pages/who-we-serve/manufacturing/manufacturing";
+import Logistics from "../pages/who-we-serve/logistics/logistics";
 
 const AppRouter = () => {
   return (
@@ -41,6 +42,7 @@ const AppRouter = () => {
         <Route path="/industries/government-public-sector" element={<GovernmentPublicSector />} />
         <Route path="/industries/restaurant" element={<Restaurant />} />
         <Route path="/industries/manufacturing" element={<Manufacturing />} />
+        <Route path="/industries/logistics" element={<Logistics />} />
       </Routes>
 
       <Footer />
