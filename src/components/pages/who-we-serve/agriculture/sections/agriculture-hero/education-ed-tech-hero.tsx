@@ -7,7 +7,7 @@ const AgricultureHero = () => {
       {/* Background Image */}
       <div className="pointer-events-none absolute inset-0">
         <img
-          src="https://res.cloudinary.com/dfsu0xeb/image/upload/plaxonic/industries/education-edtech/Education.webp"
+          src="https://res.cloudinary.com/dfsu0xeb/image/upload/plaxonic/industries/agriculture-agritech/agrticulture.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
