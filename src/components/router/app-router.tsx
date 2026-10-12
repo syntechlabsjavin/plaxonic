@@ -14,6 +14,7 @@ import Agriculture from "../pages/who-we-serve/agriculture/agriculture";
 import Banking from "../pages/who-we-serve/banking/banking";
 import Telecommunications from "../pages/who-we-serve/telecommunications/telecommunications";
 import GovernmentPublicSector from "../pages/who-we-serve/government-public-sector/government-public-sector";
+import Restaurant from "../pages/who-we-serve/restaurant/restaurant";
 
 const AppRouter = () => {
   return (
@@ -37,6 +38,7 @@ const AppRouter = () => {
         <Route path="/industries/banking" element={<Banking />} />
         <Route path="/industries/telecommunications" element={<Telecommunications />} />
         <Route path="/industries/government-public-sector" element={<GovernmentPublicSector />} />
+        <Route path="/industries/restaurant" element={<Restaurant />} />
       </Routes>
 
       <Footer />
