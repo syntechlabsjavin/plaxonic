@@ -45,7 +45,7 @@ const InsightsCtaSection = () => {
         {/* Right – video */}
         <div className="w-full lg:w-1/2 h-64 lg:h-auto min-h-[400px] relative">
           <video
-            src="src/assets/insights-cta.mp4"
+            src="src/assets/home-page/insights-cta.mp4"
             autoPlay
             loop
             muted

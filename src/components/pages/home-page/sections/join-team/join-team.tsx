@@ -13,7 +13,7 @@ interface JoinTeamProps {
 }
 
 const JoinTeam = ({
-  image = "/src/assets/side-image.webp",
+  image = "/src/assets/home-page/side-image.webp",
   eyebrow = "Join SyntechLabs",
   title = "Build What's Next",
   description = "Work on innovative software solutions, AI-powered systems, cloud-native platforms, and enterprise applications. Join our team to solve meaningful challenges and build technology that makes a difference.",

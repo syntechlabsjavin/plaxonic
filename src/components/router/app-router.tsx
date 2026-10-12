@@ -4,6 +4,11 @@ import Footer from "../footer/footer";
 import Navbar from "../navbar/navbar";
 import HomePage from "../pages/home-page/home-page";
 import ContactPage from "../pages/contact-page/contact-page";
+import WebApplicationDevelopment from "../pages/what-we-do/digital-transformation/web-application-development/web-application-development";
+import MobileApplicationDevelopment from "../pages/what-we-do/digital-transformation/mobile-app-development/mobile-app-development";
+import SaasPlatformDevelopment from "../pages/what-we-do/digital-transformation/saas-platform-development/saas-platform-development";
+import HealthCareAndLifeSciences from "../pages/who-we-serve/health-care-and-life-sciences/health-care-and-life-sciences";
+import EnergyAndUtilities from "../pages/who-we-serve/energy-and-utilities/energy-and-utilities";
 
 const AppRouter = () => {
   return (
@@ -13,6 +18,15 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
+        {/* what we do */}
+        {/* digital transformation */}
+        <Route path="/services/web-application-development" element={<WebApplicationDevelopment />} />
+        <Route path="/services/mobile-app-development" element={<MobileApplicationDevelopment />} />
+        <Route path="/services/platform-engineering-services" element={<SaasPlatformDevelopment />} />
+
+        {/* who we serve */}
+        <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
+        <Route path="/industries/energy" element={<EnergyAndUtilities />} />
       </Routes>
 
       <Footer />
