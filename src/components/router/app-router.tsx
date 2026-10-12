@@ -10,6 +10,8 @@ import SaasPlatformDevelopment from "../pages/what-we-do/digital-transformation/
 import HealthCareAndLifeSciences from "../pages/who-we-serve/health-care-and-life-sciences/health-care-and-life-sciences";
 import EnergyAndUtilities from "../pages/who-we-serve/energy-and-utilities/energy-and-utilities";
 import EducationEdTech from "../pages/who-we-serve/education-ed-tech/education-ed-tech";
+import Agriculture from "../pages/who-we-serve/agriculture/agriculture";
+import Banking from "../pages/who-we-serve/banking/banking";
 
 const AppRouter = () => {
   return (
@@ -29,7 +31,8 @@ const AppRouter = () => {
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
         <Route path="/industries/energy" element={<EnergyAndUtilities />} />
         <Route path="/industries/education" element={<EducationEdTech />} />
-        <Route path="/industries/agriculture" element={<EducationEdTech />} />
+        <Route path="/industries/agriculture" element={<Agriculture />} />
+        <Route path="/industries/banking" element={<Banking />} />
       </Routes>
 
       <Footer />
