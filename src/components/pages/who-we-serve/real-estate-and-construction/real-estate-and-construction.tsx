@@ -1,14 +1,14 @@
 import ContactCta from "./sections/contact-cta/contact-cta";
 import InsightsSection from "./sections/insights-section/insights-section";
-import TelecommunicationsHero from "./sections/telecommunications-hero/telecommunications-hero";
+import RealEstateAndConstructionHero from "./sections/real-estate-and-construction-hero/real-estate-and-construction-hero";
 import WhatWeBuild from "./sections/what-we-build/what-we-build";
 import WhyItMatters from "./sections/why-it-matters/why-it-matters";
 
 
-const Telecommunications = () => {
+const RealEstateAndConstruction = () => {
   return (
     <>
-      <TelecommunicationsHero />
+      <RealEstateAndConstructionHero />
       <WhyItMatters />
       <WhatWeBuild />
       <InsightsSection />
@@ -17,4 +17,4 @@ const Telecommunications = () => {
   );
 };
 
-export default Telecommunications;
+export default RealEstateAndConstruction;
