@@ -19,6 +19,7 @@ import Manufacturing from "../pages/who-we-serve/manufacturing/manufacturing";
 import Logistics from "../pages/who-we-serve/logistics/logistics";
 import AutomotiveAndMobility from "../pages/who-we-serve/automotive-and-mobility/automotive-and-mobility";
 import Entertainment from "../pages/who-we-serve/entertainment/entertainment";
+import RetailAndEcommerce from "../pages/who-we-serve/retail-and-ecommerce/retail-and-ecommerce";
 
 const AppRouter = () => {
   return (
@@ -47,6 +48,7 @@ const AppRouter = () => {
         <Route path="/industries/logistics" element={<Logistics />} />
         <Route path="/industries/automotive-and-mobility" element={<AutomotiveAndMobility />} />
         <Route path="/industries/entertainment" element={<Entertainment />} />
+        <Route path="/industries/retail-and-ecommerce" element={<RetailAndEcommerce />} />
       </Routes>
 
       <Footer />
