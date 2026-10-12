@@ -1,12 +1,12 @@
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 
-const TelecommunicationsHero = () => {
+const ManufacturingHero = () => {
   return (
     <section className="relative overflow-hidden bg-white text-gray-900">
       {/* Background Image & Overlay */}
       <div className="pointer-events-none absolute inset-0">
         <img
-          src="https://res.cloudinary.com/dfsu0xeb/image/upload/plaxonic/industries/telecommunications-media/Telecommunicatins.webp"
+          src="https://res.cloudinary.com/dfsu0xeb/image/upload/plaxonic/industries/manufacturing-industrial-automation/manufacturing-hero.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
@@ -66,4 +66,4 @@ const TelecommunicationsHero = () => {
   );
 };
 
-export default TelecommunicationsHero;
+export default ManufacturingHero;
