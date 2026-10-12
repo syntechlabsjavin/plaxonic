@@ -9,6 +9,7 @@ import MobileApplicationDevelopment from "../pages/what-we-do/digital-transforma
 import SaasPlatformDevelopment from "../pages/what-we-do/digital-transformation/saas-platform-development/saas-platform-development";
 import HealthCareAndLifeSciences from "../pages/who-we-serve/health-care-and-life-sciences/health-care-and-life-sciences";
 import EnergyAndUtilities from "../pages/who-we-serve/energy-and-utilities/energy-and-utilities";
+import EducationEdTech from "../pages/who-we-serve/education-ed-tech/education-ed-tech";
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,8 @@ const AppRouter = () => {
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
         <Route path="/industries/energy" element={<EnergyAndUtilities />} />
+        <Route path="/industries/education" element={<EducationEdTech />} />
+        <Route path="/industries/agriculture" element={<EducationEdTech />} />
       </Routes>
 
       <Footer />
