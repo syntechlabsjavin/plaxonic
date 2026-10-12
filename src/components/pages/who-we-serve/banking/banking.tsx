@@ -1,4 +1,4 @@
-import BankingHero from "./sections/banking-hero/education-ed-tech-hero";
+import BankingHero from "./sections/banking-hero/banking-hero";
 import ContactCta from "./sections/contact-cta/contact-cta";
 import InsightsSection from "./sections/insights-section/insights-section";
 import WhatWeBuild from "./sections/what-we-build/what-we-build";

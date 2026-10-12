@@ -12,6 +12,7 @@ import EnergyAndUtilities from "../pages/who-we-serve/energy-and-utilities/energ
 import EducationEdTech from "../pages/who-we-serve/education-ed-tech/education-ed-tech";
 import Agriculture from "../pages/who-we-serve/agriculture/agriculture";
 import Banking from "../pages/who-we-serve/banking/banking";
+import Telecommunications from "../pages/who-we-serve/telecommunications/telecommunications";
 
 const AppRouter = () => {
   return (
@@ -33,6 +34,7 @@ const AppRouter = () => {
         <Route path="/industries/education" element={<EducationEdTech />} />
         <Route path="/industries/agriculture" element={<Agriculture />} />
         <Route path="/industries/banking" element={<Banking />} />
+        <Route path="/industries/telecommunications" element={<Telecommunications />} />
       </Routes>
 
       <Footer />
