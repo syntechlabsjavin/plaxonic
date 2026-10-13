@@ -30,6 +30,7 @@ import ERPSolutions from "../pages/what-we-do/digital-transformation/erp-solutio
 import APIMiddlewareIntegration from "../pages/what-we-do/digital-transformation/api-middleware-integration/api-middleware-integration";
 import EnterpriseSoftwareDevelopment from "../pages/what-we-do/digital-transformation/enterprise-software-development/enterprise-software-development";
 import SupportMaintenance from "../pages/what-we-do/digital-transformation/support-maintenance/support-maintenance";
+import Consulting from "../pages/what-we-do/digital-transformation/consulting/consulting";
 
 const AppRouter = () => {
   return (
@@ -51,6 +52,8 @@ const AppRouter = () => {
         <Route path="/services/api-middleware-integration" element={<APIMiddlewareIntegration />} />
         <Route path="/services/enterprise-software-development" element={<EnterpriseSoftwareDevelopment />} />
         <Route path="/services/support-maintenance" element={<SupportMaintenance />} />
+        <Route path="/services/consulting" element={<Consulting />} />
+        <Route path="/services/cybersecurity" element={<Consulting />} />
 
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
