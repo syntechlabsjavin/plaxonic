@@ -31,6 +31,7 @@ import APIMiddlewareIntegration from "../pages/what-we-do/digital-transformation
 import EnterpriseSoftwareDevelopment from "../pages/what-we-do/digital-transformation/enterprise-software-development/enterprise-software-development";
 import SupportMaintenance from "../pages/what-we-do/digital-transformation/support-maintenance/support-maintenance";
 import Consulting from "../pages/what-we-do/digital-transformation/consulting/consulting";
+import CyberSecurity from "../pages/what-we-do/digital-transformation/cyber-security/cyber-security";
 
 const AppRouter = () => {
   return (
@@ -53,7 +54,8 @@ const AppRouter = () => {
         <Route path="/services/enterprise-software-development" element={<EnterpriseSoftwareDevelopment />} />
         <Route path="/services/support-maintenance" element={<SupportMaintenance />} />
         <Route path="/services/consulting" element={<Consulting />} />
-        <Route path="/services/cybersecurity" element={<Consulting />} />
+        <Route path="/services/cybersecurity" element={<CyberSecurity />} />
+        <Route path="/services/quality-engineering-testing" element={<CyberSecurity />} />
 
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
