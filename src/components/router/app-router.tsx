@@ -23,6 +23,9 @@ import RetailAndEcommerce from "../pages/who-we-serve/retail-and-ecommerce/retai
 import Travel from "../pages/who-we-serve/travel/travel";
 import RealEstateAndConstruction from "../pages/who-we-serve/real-estate-and-construction/real-estate-and-construction";
 import NonProfit from "../pages/who-we-serve/non-profit/non-profit";
+import MicroServicesApiDevelopment from "../pages/what-we-do/digital-transformation/microservices-api-development/microservices-api-development";
+import CustomApplicationDevelopment from "../pages/what-we-do/digital-transformation/custom-application-development/custom-application-development";
+import CRMSolutions from "../pages/what-we-do/digital-transformation/crm-solutions/crm-solutions";
 
 const AppRouter = () => {
   return (
@@ -37,6 +40,10 @@ const AppRouter = () => {
         <Route path="/services/web-application-development" element={<WebApplicationDevelopment />} />
         <Route path="/services/mobile-app-development" element={<MobileApplicationDevelopment />} />
         <Route path="/services/platform-engineering-services" element={<SaasPlatformDevelopment />} />
+        <Route path="/services/microservices-api-development" element={<MicroServicesApiDevelopment />} />
+        <Route path="/services/custom-application-development" element={<CustomApplicationDevelopment />} />
+        <Route path="/services/crm-solutions" element={<CRMSolutions />} />
+        <Route path="/services/erp-solutions" element={<CRMSolutions />} />
 
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
