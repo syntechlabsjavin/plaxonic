@@ -55,7 +55,7 @@ const features = [
   },
 ];
 
-export default function EnterpriseImpact() {
+const EnterpriseImpact = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -278,4 +278,6 @@ export default function EnterpriseImpact() {
       </div>
     </section>
   );
-}
+};
+
+export default EnterpriseImpact;
