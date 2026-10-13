@@ -27,6 +27,8 @@ import MicroServicesApiDevelopment from "../pages/what-we-do/digital-transformat
 import CustomApplicationDevelopment from "../pages/what-we-do/digital-transformation/custom-application-development/custom-application-development";
 import CRMSolutions from "../pages/what-we-do/digital-transformation/crm-solutions/crm-solutions";
 import ERPSolutions from "../pages/what-we-do/digital-transformation/erp-solutions/erp-solutions";
+import APIMiddlewareIntegration from "../pages/what-we-do/digital-transformation/api-middleware-integration/api-middleware-integration";
+import EnterpriseSoftwareDevelopment from "../pages/what-we-do/digital-transformation/enterprise-software-development/enterprise-software-development";
 
 const AppRouter = () => {
   return (
@@ -45,6 +47,8 @@ const AppRouter = () => {
         <Route path="/services/custom-application-development" element={<CustomApplicationDevelopment />} />
         <Route path="/services/crm-solutions" element={<CRMSolutions />} />
         <Route path="/services/erp-solutions" element={<ERPSolutions />} />
+        <Route path="/services/api-middleware-integration" element={<APIMiddlewareIntegration />} />
+        <Route path="/services/enterprise-software-development" element={<EnterpriseSoftwareDevelopment />} />
 
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
