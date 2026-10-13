@@ -33,6 +33,7 @@ import SupportMaintenance from "../pages/what-we-do/digital-transformation/suppo
 import Consulting from "../pages/what-we-do/digital-transformation/consulting/consulting";
 import CyberSecurity from "../pages/what-we-do/digital-transformation/cyber-security/cyber-security";
 import QualityEngineering from "../pages/what-we-do/digital-transformation/quality-engineering/quality-engineering";
+import LegacyModerniztion from "../pages/what-we-do/digital-transformation/legacy-modernization/legacy-modernization";
 
 const AppRouter = () => {
   return (
@@ -57,6 +58,7 @@ const AppRouter = () => {
         <Route path="/services/consulting" element={<Consulting />} />
         <Route path="/services/cybersecurity" element={<CyberSecurity />} />
         <Route path="/services/quality-engineering-testing" element={<QualityEngineering />} />
+        <Route path="/services/legacy-application-modernization" element={<LegacyModerniztion />} />
 
         {/* who we serve */}
         <Route path="/industries/healthcare" element={<HealthCareAndLifeSciences />} />
