@@ -160,17 +160,6 @@ const InsightsSection = () => {
     setIndex((i) => Math.min(maxIndex, i + 1));
   }, [maxIndex]);
 
-  // Translate by one card + gap per step
-  const translateX = `calc(-${index} * (100% / ${visibleCount} + ${GAP_REM}rem / ${visibleCount} * ${visibleCount - 1} / ${visibleCount}) - ${index * 0}rem)`;
-  // Simpler, reliable approach: each card is (100% / visibleCount - gap adjustment)
-  // We'll use a percentage of the track based on item width.
-
-  const itemWidthPercent = 100 / visibleCount;
-  // gap is 3rem between items; we need to account for it in the transform.
-  // translateX = -(index * (itemWidth + gap))
-  // Using CSS: each item has width calc((100% - (n-1)*gap) / n)
-  // For simplicity and matching the original layout:
-
   return (
     <section
       className="w-full bg-white py-16 sm:py-20 lg:py-28"
