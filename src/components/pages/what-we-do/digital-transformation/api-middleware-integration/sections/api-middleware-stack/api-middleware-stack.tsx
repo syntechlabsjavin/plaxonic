@@ -1,10 +1,25 @@
-
 import {
   DoorOpen,
   Radio,
   Boxes,
   FileCode2,
 } from "lucide-react";
+
+import kongLogo from "../../../../../../../assets/what-we-do/kong.svg";
+import apigeeLogo from "../../../../../../../assets/what-we-do/apigee.svg";
+import awsApiGatewayLogo from "../../../../../../../assets/what-we-do/aws-api-gateway.svg";
+import azureApiManagementLogo from "../../../../../../../assets/what-we-do/azure-api-management.svg";
+import kafkaLogo from "../../../../../../../assets/what-we-do/kafka.svg";
+import rabbitmqLogo from "../../../../../../../assets/what-we-do/rabbitmq.svg";
+import awsSqsLogo from "../../../../../../../assets/what-we-do/aws-sqs.svg";
+import activemqLogo from "../../../../../../../assets/what-we-do/activemq.svg";
+import mulesoftLogo from "../../../../../../../assets/what-we-do/mulesoft.svg";
+import boomiLogo from "../../../../../../../assets/what-we-do/boomi.webp";
+import azureIntegrationLogo from "../../../../../../../assets/what-we-do/azure-integration.svg";
+import workatoLogo from "../../../../../../../assets/what-we-do/workato.svg";
+import graphqlLogo from "../../../../../../../assets/what-we-do/graphql.svg";
+import grpcLogo from "../../../../../../../assets/what-we-do/grpc.svg";
+import openidLogo from "../../../../../../../assets/what-we-do/openid.svg";
 
 interface Technology {
   name: string;
@@ -28,22 +43,22 @@ const technologyCategories: TechnologyCategory[] = [
     technologies: [
       {
         name: "Kong",
-        logo: "/src/assets/what-we-do/kong.svg",
+        logo: kongLogo,
         logoAlt: "Kong logo",
       },
       {
         name: "Apigee",
-        logo: "/src/assets/what-we-do/apigee.svg",
+        logo: apigeeLogo,
         logoAlt: "Apigee logo",
       },
       {
         name: "AWS API Gateway",
-        logo: "/src/assets/what-we-do/aws-api-gateway.svg",
+        logo: awsApiGatewayLogo,
         logoAlt: "AWS API Gateway logo",
       },
       {
         name: "Azure API Management",
-        logo: "/src/assets/what-we-do/azure-api-management.svg",
+        logo: azureApiManagementLogo,
         logoAlt: "Azure API Management logo",
       },
     ],
@@ -54,22 +69,22 @@ const technologyCategories: TechnologyCategory[] = [
     technologies: [
       {
         name: "Apache Kafka",
-        logo: "/src/assets/what-we-do/kafka.svg",
+        logo: kafkaLogo,
         logoAlt: "Apache Kafka logo",
       },
       {
         name: "RabbitMQ",
-        logo: "/src/assets/what-we-do/rabbitmq.svg",
+        logo: rabbitmqLogo,
         logoAlt: "RabbitMQ logo",
       },
       {
         name: "AWS SQS / SNS",
-        logo: "/src/assets/what-we-do/aws-sqs.svg",
+        logo: awsSqsLogo,
         logoAlt: "AWS SQS / SNS logo",
       },
       {
         name: "ActiveMQ",
-        logo: "/src/assets/what-we-do/activemq.svg",
+        logo: activemqLogo,
         logoAlt: "ActiveMQ logo",
       },
     ],
@@ -80,24 +95,24 @@ const technologyCategories: TechnologyCategory[] = [
     technologies: [
       {
         name: "MuleSoft",
-        logo: "/src/assets/what-we-do/mulesoft.svg",
+        logo: mulesoftLogo,
         logoAlt: "MuleSoft logo",
       },
       {
         name: "Boomi",
-        logo: "/src/assets/what-we-do/boomi.webp",
+        logo: boomiLogo,
         logoAlt: "Boomi logo",
         wrapperClass: "w-11 h-11 -ml-2",
         textClass: "-ml-2",
       },
       {
         name: "Azure Integration",
-        logo: "/src/assets/what-we-do/azure-integration.svg",
+        logo: azureIntegrationLogo,
         logoAlt: "Azure Integration logo",
       },
       {
         name: "Workato",
-        logo: "/src/assets/what-we-do/workato.svg",
+        logo: workatoLogo,
         logoAlt: "Workato logo",
       },
     ],
@@ -108,12 +123,12 @@ const technologyCategories: TechnologyCategory[] = [
     technologies: [
       {
         name: "REST & GraphQL",
-        logo: "/src/assets/what-we-do/graphql.svg",
+        logo: graphqlLogo,
         logoAlt: "REST & GraphQL logo",
       },
       {
         name: "gRPC",
-        logo: "/src/assets/what-we-do/grpc.svg",
+        logo: grpcLogo,
         logoAlt: "gRPC logo",
       },
       {
@@ -122,7 +137,7 @@ const technologyCategories: TechnologyCategory[] = [
       },
       {
         name: "OAuth2 / OIDC",
-        logo: "/src/assets/what-we-do/openid.svg",
+        logo: openidLogo,
         logoAlt: "OAuth2 / OIDC logo",
       },
     ],

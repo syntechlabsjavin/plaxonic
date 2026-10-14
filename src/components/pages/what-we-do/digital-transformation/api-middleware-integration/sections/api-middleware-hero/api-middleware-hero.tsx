@@ -5,7 +5,7 @@ import {
   Zap,
   ArrowRight,
 } from "lucide-react";
-
+import apiVideo from "../../../../../../../assets/what-we-do/api.mp4";
 const highlights = [
   {
     icon: Webhook,
@@ -72,7 +72,7 @@ const APIMiddlewareHero = () => {
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src="/src/assets/what-we-do/api.mp4" type="video/mp4" />
+          <source src={apiVideo} type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-[#0a0c10]/60" />
