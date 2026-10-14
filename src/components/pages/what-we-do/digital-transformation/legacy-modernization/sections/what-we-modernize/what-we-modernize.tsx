@@ -10,6 +10,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LegacyModernizeBg from "../../../../../../../assets/what-we-do/legacy-modernize-bg.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -126,7 +127,7 @@ const WhatWeModernize = () => {
     >
       {/* Background image */}
       <img
-        src="/src/assets/what-we-do/legacy-modernize-bg.png"
+        src={LegacyModernizeBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"

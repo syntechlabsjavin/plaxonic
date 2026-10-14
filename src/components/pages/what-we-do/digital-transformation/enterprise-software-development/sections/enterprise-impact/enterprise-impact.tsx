@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Compass, Lock, TrendingUp, Handshake } from "lucide-react";
+import EnterpriseImpactImg from "../../../../../../../assets/what-we-do/enterprise-impact-bg.jpg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -179,7 +180,7 @@ const EnterpriseImpact = () => {
     >
       {/* Background image */}
       <img
-        src="/src/assets/what-we-do/enterprise-impact-bg.jpg"
+        src={EnterpriseImpactImg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

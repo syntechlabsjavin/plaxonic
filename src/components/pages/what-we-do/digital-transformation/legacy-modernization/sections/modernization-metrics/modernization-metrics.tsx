@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LegacyMetricsBg from "../../../../../../../assets/what-we-do/legacy-metrics-bg.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -162,7 +163,7 @@ const ModernizationMetrics = () => {
     >
       {/* Background Image */}
       <img
-        src="/legacy-metrics-bg.png"
+        src={LegacyMetricsBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

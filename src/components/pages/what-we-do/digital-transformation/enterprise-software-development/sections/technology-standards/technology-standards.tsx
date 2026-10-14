@@ -2,6 +2,31 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CodeXml, Database, Cloud, ShieldCheck } from "lucide-react";
+import javaLogo from "../../../../../../../assets/what-we-do/java.svg";
+import dotnetLogo from "../../../../../../../assets/what-we-do/dotnet.svg";
+import pythonLogo from "../../../../../../../assets/what-we-do/python.svg";
+import nodejsLogo from "../../../../../../../assets/what-we-do/nodejs.svg";
+import goLogo from "../../../../../../../assets/what-we-do/go.svg";
+import reactLogo from "../../../../../../../assets/what-we-do/react.svg";
+import angularLogo from "../../../../../../../assets/what-we-do/angular.svg";
+import typescriptLogo from "../../../../../../../assets/what-we-do/typescript.svg";
+
+import postgresqlLogo from "../../../../../../../assets/what-we-do/postgresql.svg";
+import mysqlLogo from "../../../../../../../assets/what-we-do/mysql.svg";
+import mongodbLogo from "../../../../../../../assets/what-we-do/mongodb.svg";
+import redisLogo from "../../../../../../../assets/what-we-do/redis.svg";
+import kafkaLogo from "../../../../../../../assets/what-we-do/kafka.svg";
+import graphqlLogo from "../../../../../../../assets/what-we-do/graphql.svg";
+
+import awsLogo from "../../../../../../../assets/what-we-do/aws.svg";
+import azureLogo from "../../../../../../../assets/what-we-do/azure.svg";
+import gcpLogo from "../../../../../../../assets/what-we-do/gcp.svg";
+import dockerLogo from "../../../../../../../assets/what-we-do/docker.svg";
+import kubernetesLogo from "../../../../../../../assets/what-we-do/kubernetes.svg";
+
+import oauthLogo from "../../../../../../../assets/what-we-do/oauth.svg";
+import openidLogo from "../../../../../../../assets/what-we-do/openid.svg";
+import owaspLogo from "../../../../../../../assets/what-we-do/owasp.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,27 +35,27 @@ const technologyGroups = [
     title: "Languages & frameworks",
     icon: CodeXml,
     technologies: [
-      { name: "Java", logo: "/src/assets/what-we-do/java.svg" },
-      { name: ".NET", logo: "/src/assets/what-we-do/dotnet.svg" },
-      { name: "Python", logo: "/src/assets/what-we-do/python.svg" },
-      { name: "Node.js", logo: "/src/assets/what-we-do/nodejs.svg" },
-      { name: "Go", logo: "/src/assets/what-we-do/go.svg" },
-      { name: "React", logo: "/src/assets/what-we-do/react.svg" },
-      { name: "Angular", logo: "/src/assets/what-we-do/angular.svg" },
-      { name: "TypeScript", logo: "/src/assets/what-we-do/typescript.svg" },
+      { name: "Java", logo: javaLogo },
+      { name: ".NET", logo: dotnetLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "Node.js", logo: nodejsLogo },
+      { name: "Go", logo: goLogo },
+      { name: "React", logo: reactLogo },
+      { name: "Angular", logo: angularLogo },
+      { name: "TypeScript", logo: typescriptLogo },
     ],
   },
   {
     title: "Data & integration",
     icon: Database,
     technologies: [
-      { name: "PostgreSQL", logo: "/src/assets/what-we-do/postgresql.svg" },
-      { name: "MySQL", logo: "/src/assets/what-we-do/mysql.svg" },
-      { name: "MongoDB", logo: "/src/assets/what-we-do/mongodb.svg" },
-      { name: "Redis", logo: "/src/assets/what-we-do/redis.svg" },
-      { name: "Kafka", logo: "/src/assets/what-we-do/kafka.svg" },
+      { name: "PostgreSQL", logo: postgresqlLogo },
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "Redis", logo: redisLogo },
+      { name: "Kafka", logo: kafkaLogo },
       { name: "REST" },
-      { name: "GraphQL", logo: "/src/assets/what-we-do/graphql.svg" },
+      { name: "GraphQL", logo: graphqlLogo },
       { name: "Event-driven architecture" },
     ],
   },
@@ -38,11 +63,11 @@ const technologyGroups = [
     title: "Cloud & delivery",
     icon: Cloud,
     technologies: [
-      { name: "AWS", logo: "/src/assets/what-we-do/aws.svg" },
-      { name: "Azure", logo: "/src/assets/what-we-do/azure.svg" },
-      { name: "Google Cloud", logo: "/src/assets/what-we-do/gcp.svg" },
-      { name: "Docker", logo: "/src/assets/what-we-do/docker.svg" },
-      { name: "Kubernetes", logo: "/src/assets/what-we-do/kubernetes.svg" },
+      { name: "AWS", logo: awsLogo },
+      { name: "Azure", logo: azureLogo },
+      { name: "Google Cloud", logo: gcpLogo },
+      { name: "Docker", logo: dockerLogo },
+      { name: "Kubernetes", logo: kubernetesLogo },
       { name: "CI/CD" },
       { name: "Infrastructure as code" },
     ],
@@ -51,13 +76,13 @@ const technologyGroups = [
     title: "Security & standards",
     icon: ShieldCheck,
     technologies: [
-      { name: "OAuth 2.0", logo: "/src/assets/what-we-do/oauth.svg" },
-      { name: "OIDC", logo: "/src/assets/what-we-do/openid.svg" },
+      { name: "OAuth 2.0", logo: oauthLogo },
+      { name: "OIDC", logo: openidLogo },
       { name: "Role-based access control" },
       { name: "Encryption" },
       {
         name: "OWASP-aligned practices",
-        logo: "/src/assets/what-we-do/owasp.svg",
+        logo: owaspLogo,
       },
       { name: "SOC 2" },
       { name: "GDPR" },

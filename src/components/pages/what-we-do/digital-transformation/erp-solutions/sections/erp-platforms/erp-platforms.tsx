@@ -7,6 +7,11 @@ type ERPPlatform = {
   logoAlt?: string;
   custom?: boolean;
 };
+import sapLogo from "../../../../../../../assets/what-we-do/logo-sap.svg";
+import netSuiteLogo from "../../../../../../../assets/what-we-do/logo-netsuite.svg";
+import dynamics365Logo from "../../../../../../../assets/what-we-do/logo-dynamics365.svg";
+import odooLogo from "../../../../../../../assets/what-we-do/logo-odoo.svg";
+import acumaticaLogo from "../../../../../../../assets/what-we-do/logo-acumatica.svg";
 
 const platforms: ERPPlatform[] = [
   {
@@ -14,7 +19,7 @@ const platforms: ERPPlatform[] = [
     tagline: "Enterprise-grade + global scale",
     description:
       "Real-time ERP for complex, multinational operations—Fiori UX, embedded analytics, and process depth for the largest enterprises.",
-    logo: "/src/assets/what-we-do/logo-sap.svg",
+    logo: sapLogo,
     logoAlt: "SAP S/4HANA logo",
   },
   {
@@ -22,7 +27,7 @@ const platforms: ERPPlatform[] = [
     tagline: "Cloud-native + mid-market",
     description:
       "A single cloud suite for finance, inventory, and operations—fast to deploy and built to scale with growing businesses.",
-    logo: "/src/assets/what-we-do/logo-netsuite.svg",
+    logo: netSuiteLogo,
     logoAlt: "Oracle NetSuite logo",
   },
   {
@@ -30,7 +35,7 @@ const platforms: ERPPlatform[] = [
     tagline: "Finance + Operations",
     description:
       "Microsoft's ERP wired natively into Power Platform, Teams, and Azure—ideal where the Microsoft stack already runs the business.",
-    logo: "/src/assets/what-we-do/logo-dynamics365.svg",
+    logo: dynamics365Logo,
     logoAlt: "Dynamics 365 logo",
   },
   {
@@ -38,7 +43,7 @@ const platforms: ERPPlatform[] = [
     tagline: "Open-source + modular",
     description:
       "An app-by-app ERP you adopt at your own pace—cost-effective, highly customizable, and friendly to lean teams.",
-    logo: "/src/assets/what-we-do/logo-odoo.svg",
+    logo: odooLogo,
     logoAlt: "Odoo logo",
   },
   {
@@ -46,7 +51,7 @@ const platforms: ERPPlatform[] = [
     tagline: "Flexible cloud ERP",
     description:
       "Consumption-based licensing and a true cloud architecture for distribution, manufacturing, and field-service operations.",
-    logo: "/src/assets/what-we-do/logo-acumatica.svg",
+    logo: acumaticaLogo,
     logoAlt: "Acumatica logo",
   },
   {

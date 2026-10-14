@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Check, X } from "lucide-react";
+import Pt1Video from "../../../../../../../assets/what-we-do/pt1.mp4"
 
 interface WhyCustomSoftwareProps {
   eyebrow?: string;
@@ -38,7 +39,7 @@ const WhyCustomSoftware = ({
   heading = "Off-The-Shelf Compromises.",
   highlightedHeading = "Custom Doesn't.",
   description = "Generic software is built for the average of everyone. Your business isn't average—and the difference shows up everywhere it matters.",
-  videoSrc = "/src/assets/what-we-do/pt1.mp4",
+  videoSrc = Pt1Video,
   offTheShelfTitle = "Off-the-shelf software",
   offTheShelfSubtitle = "Built for the average customer",
   customTitle = "Custom-built by Plaxonic",

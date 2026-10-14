@@ -4,6 +4,8 @@ import {
   HeartPulse,
   ScrollText,
 } from "lucide-react";
+import EnterprisePillarstImg from "../../../../../../../assets/what-we-do/enterprise-pillars-bg.jpg"
+
 
 const enterprisePillars = [
   {
@@ -41,7 +43,7 @@ const EnterprisePillars= ()=> {
     <section className="relative w-full overflow-hidden bg-[#0a0c10] py-16 sm:py-20 md:py-24 lg:py-36">
       {/* Background Image */}
       <img
-        src="/src/assets/what-we-do/enterprise-pillars-bg.jpg"
+        src={EnterprisePillarstImg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

@@ -4,6 +4,7 @@ import {
   Clock,
   Activity,
 } from "lucide-react";
+import PlaceHolderX from "../../../../../../../assets/what-we-do/placeholder-x.svg";
 
 const ManagedSecurity = () => {
   return (
@@ -47,7 +48,7 @@ const ManagedSecurity = () => {
           <div className="relative">
             <div className="relative overflow-hidden shadow-2xl ring-1 ring-white/10">
               <img
-                src="/src/assets/what-we-do/placeholder-x.svg"
+                src={PlaceHolderX}
                 alt="Security operations monitoring"
                 className="block aspect-[4/3] w-full object-cover"
               />

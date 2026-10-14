@@ -6,6 +6,8 @@ import {
   Factory,
   RefreshCw,
 } from "lucide-react";
+import Erp6Img from "../../../../../../../assets/what-we-do/erp6.jpg"
+
 
 interface ImpactStat {
   value: string;
@@ -70,7 +72,7 @@ const ERPImpact: React.FC = () => {
       {/* Background image and overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/what-we-do/erp6.jpg"
+          src={Erp6Img}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"

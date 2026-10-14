@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import placeholderImage from "../../../../../../../assets/what-we-do/placeholder-x.svg";
 
 interface CaseStudy {
   company: string;
@@ -23,7 +24,7 @@ const caseStudies: CaseStudy[] = [
       "We rebuilt their pipeline stages around a real qualification framework and automated forecasting, giving leadership a number they could finally trust and reps a clear next move on every deal.",
     result: "+41%",
     resultLabel: "win rate within two quarters",
-    image: "/src/assets/what-we-do/placeholder-x.svg",
+    image: placeholderImage,
     imageAlt: "Northstar SaaS",
     link: "#",
   },
@@ -35,7 +36,7 @@ const caseStudies: CaseStudy[] = [
       "We streamlined customer records, connected essential business systems, and automated routine workflows to give teams a consistent view of customer relationships and sales activity.",
     result: "-35%",
     resultLabel: "less manual data processing",
-    image: "/src/assets/what-we-do/placeholder-x.svg",
+    image: placeholderImage,
     imageAlt: "Meridian Financial",
     link: "#",
   },
@@ -47,7 +48,7 @@ const caseStudies: CaseStudy[] = [
       "We connected lead capture, sales pipelines, and customer communications in one coordinated CRM workflow, helping the team respond faster and manage opportunities more effectively.",
     result: "3x",
     resultLabel: "faster lead response",
-    image: "/src/assets/what-we-do/placeholder-x.svg",
+    image: placeholderImage,
     imageAlt: "Vertex Solutions",
     link: "#",
   },

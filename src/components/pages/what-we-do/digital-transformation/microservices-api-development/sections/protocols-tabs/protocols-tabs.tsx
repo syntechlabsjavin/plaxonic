@@ -1,5 +1,9 @@
 import { useRef, useState } from "react";
 import type { KeyboardEvent } from "react";
+import proto1Image from "../../../../../../../assets/what-we-do/proto-1.webp";
+import proto2Image from "../../../../../../../assets/what-we-do/proto-2.png";
+import proto3Image from "../../../../../../../assets/what-we-do/proto-3.png";
+import proto4Image from "../../../../../../../assets/what-we-do/proto-4.png";
 
 /* -------------------------------------------------------------------------- */
 /* Types & content                                                            */
@@ -40,7 +44,7 @@ const PROTOCOLS: Protocol[] = [
       "200 OK",
       '{ "id": 8821, "status": "shipped" }',
     ],
-    image: "/src/assets/what-we-do/proto-1.webp",
+    image: proto1Image,
   },
   {
     id: "graphql",
@@ -60,7 +64,7 @@ const PROTOCOLS: Protocol[] = [
       "200 OK",
       '{ "data": { "order": { "id": 8821, "status": "shipped" } } }',
     ],
-    image: "/src/assets/what-we-do/proto-2.png",
+    image: proto2Image,
   },
   {
     id: "grpc",
@@ -80,7 +84,7 @@ const PROTOCOLS: Protocol[] = [
       "status: OK",
       "Order { id: 8821, status: SHIPPED }",
     ],
-    image: "/src/assets/what-we-do/proto-3.png",
+    image: proto3Image,
   },
   {
     id: "event-streaming",
@@ -100,7 +104,7 @@ const PROTOCOLS: Protocol[] = [
       "event: order.shipped",
       '{ "id": 8821, "status": "shipped" }',
     ],
-    image: "/src/assets/what-we-do/proto-4.png",
+    image: proto4Image,
   },
   {
     id: "websockets",
@@ -120,7 +124,7 @@ const PROTOCOLS: Protocol[] = [
       "101 Switching Protocols",
       '{ "event": "order.updated", "id": 8821 }',
     ],
-    image: "/src/assets/what-we-do/proto-1.webp",
+    image: proto1Image,
   },
 ];
 

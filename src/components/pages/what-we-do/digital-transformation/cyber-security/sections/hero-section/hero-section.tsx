@@ -1,4 +1,5 @@
 import { ArrowRight, ShieldCheck, Lock } from "lucide-react";
+import CybersecurityHero from "../../../../../../../assets/what-we-do/cybersecurity-hero.webp";
 
 const HeroSection = () => {
   return (
@@ -59,7 +60,7 @@ const HeroSection = () => {
 
             <div className="relative overflow-hidden bg-[#0d0f14] shadow-2xl ring-1 ring-black/10">
               <img
-                src="/src/assets/what-we-do/cybersecurity-hero.webp"
+                src={CybersecurityHero}
                 alt="Security operations"
                 className="block aspect-[4/3] w-full object-cover sm:aspect-[16/10] lg:aspect-[4/3]"
               />

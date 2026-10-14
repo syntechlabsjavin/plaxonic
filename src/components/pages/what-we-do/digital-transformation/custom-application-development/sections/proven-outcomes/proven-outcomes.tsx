@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
+import cd1Image from "../../../../../../../assets/what-we-do/cd1.png";
+import cd2Image from "../../../../../../../assets/what-we-do/cd2.png";
+import cd3Image from "../../../../../../../assets/what-we-do/cd3.png";
 
 interface CaseStudyMetric {
   value: string;
@@ -34,7 +37,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
     title: "A custom dispatch platform that replaced 11 spreadsheets",
     description:
       "Their operations ran on a fragile web of shared spreadsheets and email threads. We built a single dispatch application with rules-based routing, live driver tracking, and automated customer notifications—turning a daily scramble into a calm, auditable workflow.",
-    image: "/src/assets/what-we-do/cd1.png",
+    image: cd1Image,
     imageAlt: "Verdant Logistics",
     metrics: [
       { value: "73%", label: "less manual data entry" },
@@ -48,7 +51,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
       "Re-platforming a 15-year-old patient system with zero downtime",
     description:
       "A decade-and-a-half of business logic lived in an unsupported desktop app. We modernized it into a secure, HIPAA-aligned web platform—migrating every record without losing a byte and giving clinicians an interface they actually wanted to use.",
-    image: "/src/assets/what-we-do/cd2.png",
+    image: cd2Image,
     imageAlt: "Holloway Health Group",
     reverse: true,
     metrics: [
@@ -62,7 +65,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
     title: "A self-service portal that cut support tickets in half",
     description:
       "Premium clients wanted to manage orders, approvals, and documents themselves. We built a branded portal with self-service onboarding and live status tracking—deflecting routine support requests while lifting the experience customers rave about.",
-    image: "/src/assets/what-we-do/cd3.png",
+    image: cd3Image,
     imageAlt: "Atelier & Co.",
     metrics: [
       { value: "51%", label: "fewer support tickets" },

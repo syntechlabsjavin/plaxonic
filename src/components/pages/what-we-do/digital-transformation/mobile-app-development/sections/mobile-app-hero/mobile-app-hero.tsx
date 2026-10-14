@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import MobileHero from "../../../../../../../assets/mobile-application-development/mobile-hero-devices.webp";
 
 const MobileAppHero = () => {
   return (
@@ -6,7 +7,7 @@ const MobileAppHero = () => {
       {/* Desktop Device Image */}
       <div className="absolute inset-y-0 right-0 hidden w-[55%] items-center justify-center pr-6 lg:flex xl:pr-12">
         <img
-          src="/src/assets/mobile-application-development/mobile-hero-devices.webp"
+          src={MobileHero}
           alt="Mobile apps across iOS, Android, React Native and Flutter"
           className="h-auto max-h-[80%] w-auto max-w-[96%] object-contain drop-shadow-2xl"
         />

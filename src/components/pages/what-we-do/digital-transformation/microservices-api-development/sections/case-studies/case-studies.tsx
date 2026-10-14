@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
-
+import Case1 from "../../../../../../../assets/what-we-do/case-1.png";
 /* -------------------------------------------------------------------------- */
 /* Types & default content                                                    */
 /* -------------------------------------------------------------------------- */
@@ -43,7 +43,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
       "Breaking a 1.2M-line monolith into 40 services, without a freeze",
     description:
       "Using a strangler-fig approach, we peeled checkout, catalog, and fulfillment out of a decade-old monolith one bounded context at a time. New services shipped behind the existing API while the legacy core kept serving traffic, so the business never paused.",
-    image: "/src/assets/what-we-do/case-1.png",
+    image: Case1,
     imageAlt: "Cartwheel Retail",
     featured: true,
     metrics: [
@@ -63,7 +63,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
     title: "An open-banking API platform serving 80M calls a day",
     description:
       "A governed API gateway with OAuth2, rate limiting, and a developer portal turned core banking into a partner-ready product.",
-    image: "/src/assets/what-we-do/case-1.png",
+    image: Case1,
     imageAlt: "Meridian Bank",
     metrics: [
       {
@@ -79,7 +79,7 @@ const DEFAULT_CASE_STUDIES: CaseStudy[] = [
       "Real-time shipment tracking on a Kafka event backbone",
     description:
       "Event sourcing and CQRS replaced nightly batch jobs, giving customers live tracking and the ops team an auditable history.",
-    image: "/src/assets/what-we-do/case-1.png",
+    image: Case1,
     imageAlt: "Polaris Logistics",
     metrics: [
       {

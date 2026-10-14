@@ -9,6 +9,8 @@ import {
   Boxes,
   Zap,
 } from "lucide-react";
+import LegacyHeroBg from "../../../../../../../assets/what-we-do/legacy-hero-bg.webp"
+
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -65,7 +67,7 @@ const HeroSection = () => {
     >
       {/* Background image */}
       <img
-        src="/src/assets/what-we-do/legacy-hero-bg.webp"
+        src={LegacyHeroBg}
         alt=""
         aria-hidden="true"
         className="legacy-hero-bg pointer-events-none absolute inset-0 h-full w-full object-cover"
