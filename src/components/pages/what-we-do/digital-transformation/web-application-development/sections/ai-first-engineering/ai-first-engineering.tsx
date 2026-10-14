@@ -93,7 +93,7 @@ const AIFirstEngineering = () => {
             <div className="relative border border-white/10 bg-white/[0.035] p-6 shadow-2xl backdrop-blur-xl lg:p-8">
               {/* Search bar */}
               <div className="mb-5 flex items-center gap-3 border border-white/10 bg-black/30 px-4 py-3.5">
-                <Sparkles className="h-4 w-4 shrink-0 text-primary-light" />
+                <Sparkles className="h-4 w-4 shrink-0 text-primary" />
 
                 <span className="flex-1 truncate text-sm text-gray-400">
                   Ask anything about your data…
@@ -117,7 +117,7 @@ const AIFirstEngineering = () => {
                     className="group flex items-center gap-3.5 border border-white/10 bg-white/[0.03] px-4 py-3.5 transition-colors duration-300 hover:border-primary/40 hover:bg-white/[0.06]"
                   >
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary/15">
-                      <Icon className="h-4 w-4 text-primary-light" />
+                      <Icon className="h-4 w-4 text-primary" />
                     </div>
 
                     <span className="text-sm leading-snug font-medium text-gray-200">
