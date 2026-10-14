@@ -1,4 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
+import CtaVideo from "../../../../../../../assets/cta.mp4";
+
 
 const WebApplicationCTA = () => {
   return (
@@ -14,7 +16,7 @@ const WebApplicationCTA = () => {
             aria-hidden="true"
             className="absolute inset-0 h-full w-full object-cover"
           >
-            <source src="/cta.mp4" type="video/mp4" />
+            <source src={CtaVideo} type="video/mp4" />
           </video>
 
           {/* Dark Overlay */}

@@ -1,6 +1,7 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import CtaVideo from "../../../../../../../assets/cta.mp4";
 
 const CTA = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const CTA = () => {
             aria-hidden="true"
             className="absolute inset-0 h-full w-full object-cover"
           >
-            <source src="/cta.mp4" type="video/mp4" />
+            <source src={CtaVideo} type="video/mp4" />
           </video>
 
           {/* Dark overlay */}

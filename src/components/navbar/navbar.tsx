@@ -5,6 +5,7 @@ import {
   FileCode2, FileText, Globe, GraduationCap, Heart, HeartHandshake, Landmark,
   Layers, Lightbulb, Link2, Menu, Network, Newspaper, PenTool, Plane, Rocket,
   Settings, Shield, Smartphone, Sparkles, Sprout, Star, Target, Trophy,
+  BrainCircuit, Cpu, ChartNoAxesColumn, Eye, Bot, Server, ShieldCheck,
   UserPlus, Users, UtensilsCrossed, Wifi, Workflow, X, Zap,
   type LucideIcon,
 } from "lucide-react";
@@ -105,17 +106,72 @@ const NAV_ITEMS: NavItem[] = [
       {
         label: "Artificial Intelligence (AI)",
         title: "Artificial Intelligence (AI)",
-        description: "Production-ready AI systems that deliver measurable business impact.",
+        description:
+          "Harness the power of AI to automate, innovate, and transform your business.",
         columns: [
           {
-            heading: "AI Services",
+            heading: "AI Development",
             links: [
-              { label: "AI Consulting & Implementation", href: "/services/ai-consulting-services" },
-              { label: "Agentic AI Services", href: "/services/agentic-ai" },
-              { label: "Generative AI", href: "/services/generative-ai" },
-              { label: "RAG Systems", href: "/services/rag-systems" },
-              { label: "AI Agent Applications", href: "/services/ai-agent-applications" },
-              { label: "Data Science & Analytics", href: "/services/data-science-analytics" },
+              {
+                label: "AI Consulting & Implementation",
+                href: "/services/ai-consulting-services",
+                icon: BrainCircuit,
+              },
+              {
+                label: "Core AI Development/Services",
+                href: "/services/core-ai-development",
+                icon: Cpu,
+              },
+              {
+                label: "Machine Learning",
+                href: "/services/machine-learning",
+                icon: ChartNoAxesColumn,
+              },
+              {
+                label: "Computer Vision",
+                href: "/services/computer-vision",
+                icon: Eye,
+              },
+              {
+                label: "Generative AI",
+                href: "/services/generative-ai",
+                icon: Sparkles,
+              },
+              {
+                label: "RAG Systems",
+                href: "/services/rag-systems",
+                icon: Database,
+              },
+            ],
+          },
+          {
+            heading: "AI Solutions",
+            links: [
+              {
+                label: "AI Chatbot",
+                href: "/services/ai-chatbot",
+                icon: Bot,
+              },
+              {
+                label: "Agentic AI Services",
+                href: "/services/agentic-ai",
+                icon: Zap,
+              },
+              {
+                label: "AI Agent Applications",
+                href: "/services/ai-agent-applications",
+                icon: Workflow,
+              },
+              {
+                label: "AI Infrastructure & Platforms",
+                href: "/services/ai-infrastructure-platforms",
+                icon: Server,
+              },
+              {
+                label: "AI Ethics & Governance",
+                href: "/services/ai-ethics-governance",
+                icon: ShieldCheck,
+              },
             ],
           },
         ],
@@ -375,9 +431,13 @@ const Navbar = ({ onAskArchI }: NavbarProps) => {
       <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
         <div className="flex items-center justify-between h-16 xl:h-20">
           <div className="flex items-center">
-            <a href="/" className="cursor-pointer" aria-label="Plaxonic home">
-              <Logo className="xl:w-[120px] xl:h-[45px]" />
-            </a>
+          <a
+            href="/"
+            className="cursor-pointer inline-block transition-all duration-300 ease-in-out hover:scale-105"
+            aria-label="Plaxonic home"
+          >
+            <Logo className="xl:w-[120px] xl:h-[45px]" />
+          </a>
 
             <nav
               ref={navRef}
