@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Plaxonic">
+  <rect width="600" height="400" fill="#f3f4f6"/>
+  <g transform="translate(230 132) scale(4.375)" fill="#d1d5db">
+    <path d="M32 1.96094L23.7856 9.27625L9.76804 20.8009L0.858887 9.52145L6.00821 8.66323L12.0566 16.2646L32 1.96094Z"/>
+    <path d="M0 30.0376L13.0776 22.0685L19.0852 29.6698L24.2754 28.8116L15.3254 17.5321L0 30.0376Z"/>
+  </g>
+</svg>

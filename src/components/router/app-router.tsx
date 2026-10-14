@@ -36,6 +36,8 @@ import QualityEngineering from "../pages/what-we-do/digital-transformation/quali
 import LegacyModerniztion from "../pages/what-we-do/digital-transformation/legacy-modernization/legacy-modernization";
 import AiConsultingServices from "../pages/what-we-do/artificial-intelligence/ai-consulting-services/ai-consulting-services";
 import CoreAiDevelopment from "../pages/what-we-do/artificial-intelligence/core-ai-development/core-ai-development";
+import MachineLearning from "../pages/what-we-do/artificial-intelligence/machine-learning/machine-learning";
+import ComputerVision from "../pages/what-we-do/artificial-intelligence/computer-vision/computer-vision";
 
 const AppRouter = () => {
   return (
@@ -65,6 +67,8 @@ const AppRouter = () => {
         {/* Artificial Inteligence AI */}
         <Route path="/services/ai-consulting-services" element={<AiConsultingServices />} />
         <Route path="/services/core-ai-development" element={<CoreAiDevelopment />} />
+        <Route path="/services/machine-learning" element={<MachineLearning />} />
+        <Route path="/services/computer-vision" element={<ComputerVision />} />
 
 
         {/* who we serve */}
