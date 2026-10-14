@@ -5,6 +5,7 @@ import {
   Radio,
   Activity,
 } from "lucide-react";
+import Api1 from "../../../../../../../assets/what-we-do/api1.png"
 
 const benefits = [
   {
@@ -39,7 +40,7 @@ const WhyPlaxonic = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/what-we-do/api1.png"
+          src={Api1}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"

@@ -1,4 +1,5 @@
 import { ArrowRight, Compass, ShieldCheck } from "lucide-react";
+import Hero12 from "../../../../../../../assets/what-we-do/hero12.mp4"
 
 const HeroSection = () => {
   return (
@@ -59,7 +60,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative aspect-[4/3] w-full overflow-hidden bg-white">
               <video
-                src="/src/assets/what-we-do/hero12.mp4"
+                src={Hero12}
                 autoPlay
                 muted
                 loop

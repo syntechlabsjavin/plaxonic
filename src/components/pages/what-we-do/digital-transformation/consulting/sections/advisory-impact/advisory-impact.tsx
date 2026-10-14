@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import PlaceholderX from "../../../../../../../assets/what-we-do/placeholder-x.svg"
 
 const impactStats = [
   { target: 120, suffix: "+", label: "Transformation programs advised" },
@@ -74,7 +75,7 @@ const AdvisoryImpact = () => {
       className="relative w-full overflow-hidden bg-[#070809] py-16 sm:py-20 md:py-24 lg:py-36"
     >
       <img
-        src="/placeholder-x.svg"
+        src={PlaceholderX}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"

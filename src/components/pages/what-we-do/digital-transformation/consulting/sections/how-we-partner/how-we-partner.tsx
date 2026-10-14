@@ -1,4 +1,5 @@
 import { Check, ArrowRight } from "lucide-react";
+import PlaceHolderX from "../../../../../../../assets/what-we-do/placeholder-x.svg"
 
 const partnershipBenefits = [
   "Senior advisors, not junior analysts, on every engagement",
@@ -18,7 +19,7 @@ const HowWePartner = () => {
 
             <div className="relative overflow-hidden">
               <img
-                src="/src/assets/what-we-do/placeholder-x.svg"
+                src={PlaceHolderX}
                 alt="Advisors working alongside a client team"
                 className="block aspect-[4/3] w-full object-cover"
               />

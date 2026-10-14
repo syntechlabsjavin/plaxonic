@@ -1,8 +1,13 @@
+import salesforceLogo from "../../../../../../../assets/what-we-do/logo-salesforce.svg";
+import hubspotLogo from "../../../../../../../assets/what-we-do/logo-hubspot.svg";
+import zohoLogo from "../../../../../../../assets/what-we-do/logo-zoho.svg";
+import pipedriveLogo from "../../../../../../../assets/what-we-do/logo-pipedrive.svg";
+import dynamics365Logo from "../../../../../../../assets/what-we-do/logo-dynamics365.svg";
 
 const platforms = [
   {
     name: "Salesforce",
-    logo: "/src/assets/what-we-do/logo-salesforce.svg",
+    logo: salesforceLogo,
     alt: "Salesforce logo",
     category: "Sales Cloud + Service Cloud",
     description:
@@ -10,7 +15,7 @@ const platforms = [
   },
   {
     name: "HubSpot",
-    logo: "/src/assets/what-we-do/logo-hubspot.svg",
+    logo: hubspotLogo,
     alt: "HubSpot logo",
     category: "Marketing + Sales + Service Hubs",
     description:
@@ -18,7 +23,7 @@ const platforms = [
   },
   {
     name: "Zoho CRM",
-    logo: "/src/assets/what-we-do/logo-zoho.svg",
+    logo: zohoLogo,
     alt: "Zoho CRM logo",
     category: "Cost-effective + flexible",
     description:
@@ -26,7 +31,7 @@ const platforms = [
   },
   {
     name: "Pipedrive",
-    logo: "/src/assets/what-we-do/logo-pipedrive.svg",
+    logo: pipedriveLogo,
     alt: "Pipedrive logo",
     category: "Sales-first + lightweight",
     description:
@@ -34,7 +39,7 @@ const platforms = [
   },
   {
     name: "Microsoft Dynamics 365",
-    logo: "/src/assets/what-we-do/logo-dynamics365.svg",
+    logo: dynamics365Logo,
     alt: "Microsoft Dynamics 365 logo",
     category: "Deep Microsoft integration",
     description:
