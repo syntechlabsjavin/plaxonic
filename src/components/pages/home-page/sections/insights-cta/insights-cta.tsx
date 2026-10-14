@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
-import CTAVideo from "../../../../../assets/home-page/insights-cta.mp4"
+import CtaVideo from "../../../../../assets/home-page/insights-cta.mp4"
 
 const InsightsCtaSection = () => {
 
@@ -46,7 +46,7 @@ const InsightsCtaSection = () => {
         {/* Right – video */}
         <div className="w-full lg:w-1/2 h-64 lg:h-auto min-h-[400px] relative">
           <video
-            src={CTAVideo}
+            src={CtaVideo}
             autoPlay
             loop
             muted

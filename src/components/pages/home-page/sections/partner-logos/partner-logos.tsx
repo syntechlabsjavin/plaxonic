@@ -1,18 +1,25 @@
+import asusLogo from "../../../../../assets/partner-logos/asus.png";
+import zomatoLogo from "../../../../../assets/partner-logos/zomato.png";
+import tataLogo from "../../../../../assets/partner-logos/tata-technologies.png";
+import aldLogo from "../../../../../assets/partner-logos/ald-automotive.png";
+import pioneerLogo from "../../../../../assets/partner-logos/pioneer.png";
+import doubleTreeLogo from "../../../../../assets/partner-logos/doubletree-hilton.png";
+
 interface Partner {
   name: string;
   logo: string;
 }
 
 const PARTNERS: Partner[] = [
-  { name: "ASUS", logo: "src/assets/partner-logos/asus.png" },
-  { name: "Zomato", logo: "src/assets/partner-logos/zomato.png" },
-  { name: "TATA Technologies", logo: "src/assets/partner-logos/tata-technologies.png" },
-  { name: "ALD Automotive", logo: "src/assets/partner-logos/ald-automotive.png" },
-  { name: "Pioneer", logo: "src/assets/partner-logos/pioneer.png" },
-  { name: "DoubleTree by Hilton", logo: "src/assets/partner-logos/doubletree-hilton.png" },
+  { name: "ASUS", logo: asusLogo },
+  { name: "Zomato", logo: zomatoLogo },
+  { name: "TATA Technologies", logo: tataLogo },
+  { name: "ALD Automotive", logo: aldLogo },
+  { name: "Pioneer", logo: pioneerLogo },
+  { name: "DoubleTree by Hilton", logo: doubleTreeLogo },
 ];
 
-const PartnerLogos = () =>{
+const PartnerLogos = () => {
   return (
     <section className="bg-white pt-0 lg:pt-2 pb-8 lg:pb-10">
       <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 mb-8 sm:mb-12 lg:mb-14">
@@ -44,6 +51,6 @@ const PartnerLogos = () =>{
       </div>
     </section>
   );
-}
+};
 
 export default PartnerLogos;
