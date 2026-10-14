@@ -104,7 +104,7 @@ const QualityEngineeringCost = () => {
           {/* Animated Defect Cost Chart */}
           <div className="relative border border-gray-200 bg-white p-6 lg:p-8">
             <div className="flex h-64 items-end gap-3 sm:gap-4">
-              {costStages.map((item, index) => {
+              {costStages.map((item) => {
                 const animatedHeight = item.height * progress;
                 const animatedMultiplier = Math.round(
                   item.multiplier * progress
