@@ -7,6 +7,8 @@ import {
   Gauge,
   ShieldCheck,
 } from "lucide-react";
+import QeHeroBg from "../../../../../../../assets/what-we-do/qe-hero-bg.webp";
+
 
 const testResults = [
   { name: "auth › login flow", duration: "212ms", status: "passed" },
@@ -58,7 +60,7 @@ const HeroSection = () => {
     <section className="relative w-full overflow-hidden bg-[#070809] pb-16 pt-28 sm:pb-20 sm:pt-32 lg:pb-28 lg:pt-40">
       {/* Background Image */}
       <img
-        src="/qe-hero-bg.webp"
+        src={QeHeroBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-50"

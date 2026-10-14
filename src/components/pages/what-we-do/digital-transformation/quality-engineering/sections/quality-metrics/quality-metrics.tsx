@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import QeMetricsBg from "../../../../../../../assets/what-we-do/qe-metrics-bg.png";
 
 const metrics = [
   {
@@ -98,7 +99,7 @@ const QualityMetrics = () => {
     >
       {/* Background Image */}
       <img
-        src="/qe-metrics-bg.png"
+        src={QeMetricsBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

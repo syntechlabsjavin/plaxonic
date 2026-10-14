@@ -5,6 +5,8 @@ import {
   FileChartColumn,
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import SupportImpactBg from "../../../../../../../assets/what-we-do/support-impact-bg.webp";
+
 
 const impactMetrics = [
   {
@@ -165,7 +167,7 @@ const SupportImpact=()=> {
     <section className="relative w-full overflow-hidden bg-black py-16 sm:py-20 md:py-24 lg:py-36">
       {/* Background Image */}
       <img
-        src="/src/assets/what-we-do/support-impact-bg.webp"
+        src={SupportImpactBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

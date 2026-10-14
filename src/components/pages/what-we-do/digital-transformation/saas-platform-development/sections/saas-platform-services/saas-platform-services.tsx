@@ -10,6 +10,8 @@ import {
   Sparkles,
   Terminal,
 } from "lucide-react";
+import MultiTenant from "../../../../../../../assets/saas-platform-development/multi-tenant.jpg";
+
 
 const PLATFORM_SERVICES = [
   {
@@ -120,7 +122,7 @@ const SaaSPlatformServices = () => {
                 {featured && (
                   <div className="pointer-events-none absolute inset-y-0 right-0 w-full sm:w-1/2">
                     <img
-                      src="/src/assets/saas-platform-development/multi-tenant.jpg"
+                      src={MultiTenant}
                       alt="Abstract multi-tenant architecture visual"
                       className="absolute inset-0 h-full w-full object-cover"
                     />

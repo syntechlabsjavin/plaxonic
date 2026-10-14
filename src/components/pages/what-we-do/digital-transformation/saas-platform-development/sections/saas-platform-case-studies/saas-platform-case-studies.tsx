@@ -1,5 +1,8 @@
 
 import { ArrowUpRight } from "lucide-react";
+import caseImage1 from "../../../../../../../assets/saas-platform-development/case-1.png";
+import caseImage2 from "../../../../../../../assets/saas-platform-development/case-2.png";
+import caseImage3 from "../../../../../../../assets/saas-platform-development/case-3.png";
 
 interface CaseStudy {
   image: string;
@@ -13,7 +16,7 @@ interface CaseStudy {
 
 const CASE_STUDIES: CaseStudy[] = [
   {
-    image: "/src/assets/saas-platform-development/case-3.png",
+    image: caseImage3,
     name: "LedgerWorks",
     category: "Multi-Tenant SaaS",
     title: "Re-platforming a fintech SaaS to silo-per-tenant isolation",
@@ -24,7 +27,7 @@ const CASE_STUDIES: CaseStudy[] = [
       "enterprise tenants onboarded with zero data-isolation incidents",
   },
   {
-    image: "/src/assets/saas-platform-development/case-1.png",
+    image: caseImage1,
     name: "Northwind Labs",
     category: "Internal Developer Platform",
     title: "A Backstage-powered platform that made deploys boring",
@@ -35,7 +38,7 @@ const CASE_STUDIES: CaseStudy[] = [
       "from first commit to production, down from 9 days",
   },
   {
-    image: "/src/assets/saas-platform-development/case-2.png",
+    image: caseImage2,
     name: "Atlas Commerce",
     category: "Cloud-Native Infrastructure",
     title: "Kubernetes + FinOps cut the cloud bill while traffic tripled",

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import jpackCover from "../../../../../../../assets/web-application-development/jpack-cover.png";
+import superbuddyCover from "../../../../../../../assets/web-application-development/superbuddy-cover.png";
+import limseraCover from "../../../../../../../assets/web-application-development/limsera-cover.png";
 
 const caseStudies = [
   {
@@ -12,7 +15,7 @@ const caseStudies = [
     metric: "Self-serve",
     metricDescription:
       "custom packaging quoting and ordering, fully online",
-    image: "/src/assets/web-application-development/jpack-cover.png",
+    image: jpackCover,
     imageAlt: "JPack Solutions",
   },
   {
@@ -25,7 +28,7 @@ const caseStudies = [
     metric: "Scalable",
     metricDescription:
       "digital solutions designed to support business growth",
-    image: "/src/assets/web-application-development/superbuddy-cover.png",
+    image: superbuddyCover,
     imageAlt: "Web application development case study",
   },
   {
@@ -38,7 +41,7 @@ const caseStudies = [
     metric: "Efficient",
     metricDescription:
       "streamlined workflows and optimized business processes",
-    image: "/src/assets/web-application-development/limsera-cover.png",
+    image: limseraCover,
     imageAlt: "Custom software development case study",
   },
 ];

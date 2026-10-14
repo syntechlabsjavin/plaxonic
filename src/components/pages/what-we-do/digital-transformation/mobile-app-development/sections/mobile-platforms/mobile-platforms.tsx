@@ -5,13 +5,18 @@ import {
   Globe,
   Watch,
 } from "lucide-react";
+import iosPlatformImage from "../../../../../../../assets/mobile-application-development/platforms-card1.png";
+import androidPlatformImage from "../../../../../../../assets/mobile-application-development/platforms-card2.png";
+import crossPlatformImage from "../../../../../../../assets/mobile-application-development/platforms-card5.png";
+import pwaPlatformImage from "../../../../../../../assets/mobile-application-development/platforms-card3.png";
+import wearablePlatformImage from "../../../../../../../assets/mobile-application-development/platforms-card4.png";
 
 const mobilePlatforms = [
   {
     title: "Android Application Development",
     description:
       "We build high-performance native Android apps with Kotlin and Jetpack Compose. We design them for the full range of Android devices.",
-    image: "/src/assets/mobile-application-development/platforms-card2.png",
+    image: androidPlatformImage,
     imageAlt: "Android Application Development",
     Icon: Smartphone,
   },
@@ -19,7 +24,7 @@ const mobilePlatforms = [
     title: "Cross-Platform App Development",
     description:
       "Our cross-platform mobile app development services use React Native and Flutter to deliver native-grade performance with a shared codebase and faster time to market.",
-    image: "/src/assets/mobile-application-development/platforms-card5.png",
+    image: crossPlatformImage,
     imageAlt: "Cross-Platform App Development",
     Icon: Layers,
   },
@@ -27,7 +32,7 @@ const mobilePlatforms = [
     title: "Progressive Web Apps (PWAs)",
     description:
       "App-like web experiences with offline capability, push notifications, and near-native performance across devices.",
-    image: "/src/assets/mobile-application-development/platforms-card3.png",
+    image: pwaPlatformImage,
     imageAlt: "Progressive Web Apps (PWAs)",
     Icon: Globe,
   },
@@ -35,7 +40,7 @@ const mobilePlatforms = [
     title: "Wearable App Development",
     description:
       "Connected experiences for watchOS and Wear OS, with real-time sync, glanceable interfaces, and health integration.",
-    image: "/src/assets/mobile-application-development/platforms-card4.png",
+    image: wearablePlatformImage,
     imageAlt: "Wearable App Development",
     Icon: Watch,
   },
@@ -101,7 +106,7 @@ const MobilePlatforms = () => {
 
               <div className="relative mx-auto mt-4 flex w-full max-w-[540px] justify-center transition-transform duration-500 group-hover:scale-[1.04] lg:mt-6">
                 <img
-                  src="/src/assets/mobile-application-development/platforms-card1.png"
+                  src={iosPlatformImage}
                   alt="iOS application example with App Store rating, secure authentication and performance metrics"
                   loading="lazy"
                   className="h-auto w-full object-contain drop-shadow-xl"

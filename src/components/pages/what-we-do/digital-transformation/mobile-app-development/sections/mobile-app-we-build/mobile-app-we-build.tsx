@@ -26,10 +26,10 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-import appbuild1 from "/src/assets/mobile-application-development/appbuild1.png";
-import appbuild2 from "/src/assets/mobile-application-development/appbuild2.png";
-import appbuild3 from "/src/assets/mobile-application-development/appbuild3.png";
-import appbuild4 from "/src/assets/mobile-application-development/appbuild4.png";
+import appbuild1 from "../../../../../../../assets/mobile-application-development/appbuild1.png";
+import appbuild2 from "../../../../../../../assets/mobile-application-development/appbuild2.png";
+import appbuild3 from "../../../../../../../assets/mobile-application-development/appbuild3.png";
+import appbuild4 from "../../../../../../../assets/mobile-application-development/appbuild4.png";
 
 const applicationCategories = [
   {

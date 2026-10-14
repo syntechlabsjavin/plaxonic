@@ -6,6 +6,8 @@ import {
   Coins,
   FileCheck,
 } from "lucide-react";
+import AdvantageImg from "../../../../../../../assets/saas-platform-development/advantage.png";
+
 
 interface AdvantageStat {
   value: string;
@@ -67,7 +69,7 @@ const SaaSPlatformAdvantage = () => {
           <div className="self-start lg:sticky lg:top-32">
             <div className="relative overflow-hidden p-6 sm:p-8 lg:p-10">
               <img
-                src="/src/assets/saas-platform-development/advantage.png"
+                src={AdvantageImg}
                 alt="Abstract pastel platform visual"
                 className="absolute inset-0 h-full w-full object-cover"
               />

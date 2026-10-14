@@ -7,6 +7,8 @@ import {
   CircleCheck,
   ArrowRight,
 } from "lucide-react";
+import QeAutomationBg from "../../../../../../../assets/what-we-do/qe-automation-bg.png";
+
 
 const pipelineSteps = [
   {
@@ -68,7 +70,7 @@ const ContinuousTesting = () => {
     >
       {/* Background */}
       <img
-        src="/qe-automation-bg.png"
+        src={QeAutomationBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-60"

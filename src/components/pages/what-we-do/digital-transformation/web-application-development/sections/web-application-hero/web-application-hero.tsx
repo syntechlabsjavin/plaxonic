@@ -1,4 +1,6 @@
 import { ArrowRight } from "lucide-react";
+import WebAppHero from "../../../../../../../assets/web-application-development/web-app-hero-buddy.webp";
+
 
 const WebApplicationHero = () => {
   return (
@@ -80,7 +82,7 @@ const WebApplicationHero = () => {
 
         <div className="relative">
           <img
-            src="/src/assets/web-application-development/web-app-hero-buddy.webp"
+            src={WebAppHero}
             alt="Super Buddy AI social media management dashboard shown across desktop and mobile"
             className="relative block w-full h-auto object-contain"
           />

@@ -7,6 +7,8 @@ import {
   Star,
 } from "lucide-react";
 
+import OrganizationImg from "../../../../../../../assets/mobile-application-development/organization.png";
+
 interface Benefit {
   title: string;
   description: string;
@@ -64,7 +66,7 @@ const WhyChooseUs = () => {
           <div className="group relative flex min-h-[340px] flex-col justify-between overflow-hidden bg-[#15365f] p-6 text-white sm:p-8 lg:p-12">
             {/* Background image */}
             <img
-              src="/src/assets/mobile-application-development/organization.png"
+              src={OrganizationImg}
               alt=""
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover object-bottom mix-blend-multiply"

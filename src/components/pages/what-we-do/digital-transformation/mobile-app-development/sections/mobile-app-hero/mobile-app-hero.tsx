@@ -92,7 +92,7 @@ const MobileAppHero = () => {
           {/* Mobile Device Image */}
           <div className="mt-12 lg:hidden">
             <img
-              src="/mobile-hero-devices.webp"
+              src={MobileHero}
               alt="Mobile apps across iOS, Android, React Native and Flutter"
               className="h-auto w-full object-contain"
             />
