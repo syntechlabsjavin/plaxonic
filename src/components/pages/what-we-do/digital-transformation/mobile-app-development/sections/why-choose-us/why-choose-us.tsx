@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
                   />
                 </div>
 
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-light">
+                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
                   Zero Error Policy
                 </span>
               </div>

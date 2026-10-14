@@ -99,7 +99,7 @@ const APIMiddlewareHero = () => {
           {/* Left Content */}
           <div className="lg:w-[52%]">
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-primary-light text-xs font-semibold tracking-[0.2em] uppercase">
+              <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">
                 Digital Transformation / Enterprise Solutions
               </span>
             </div>
@@ -131,7 +131,7 @@ const APIMiddlewareHero = () => {
                     key={item.label}
                     className="inline-flex items-center gap-2 border border-white/10 bg-white/[0.03] text-gray-300 text-sm font-medium px-4 py-2"
                   >
-                    <Icon className="w-4 h-4 text-primary-light" />
+                    <Icon className="w-4 h-4 text-primary" />
                     {item.label}
                   </span>
                 );
@@ -180,7 +180,7 @@ const APIMiddlewareHero = () => {
                 {/* API Request */}
                 <div className="font-mono text-xs mb-4 border border-white/10 bg-black/30 px-3.5 py-3">
                   <div className="flex items-center gap-2 mb-1.5">
-                    <span className="text-primary-light font-semibold">
+                    <span className="text-primary font-semibold">
                       POST
                     </span>
 
@@ -228,7 +228,7 @@ const APIMiddlewareHero = () => {
                       key={metric.label}
                       className="bg-[#0e1117] px-3 py-3"
                     >
-                      <div className="text-primary-light text-base lg:text-lg font-bold leading-none font-inter mb-1">
+                      <div className="text-primary text-base lg:text-lg font-bold leading-none font-inter mb-1">
                         {metric.value}
                       </div>
 

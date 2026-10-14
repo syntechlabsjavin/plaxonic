@@ -50,7 +50,7 @@ const SaaSPlatformEngagement = () => {
         {/* Section heading */}
         <div className="mb-10 max-w-3xl sm:mb-14">
           <div className="mb-6 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               How We Engage
             </span>
           </div>

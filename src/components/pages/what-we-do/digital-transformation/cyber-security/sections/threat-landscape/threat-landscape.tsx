@@ -57,7 +57,7 @@ const statusStyles = {
   },
   primary: {
     dot: "bg-primary-light",
-    text: "text-primary-light",
+    text: "text-primary",
     border: "border-primary-light/30",
   },
 };
@@ -73,7 +73,7 @@ const ThreatLandscape = () => {
           {/* Left Content */}
           <div>
             <div className="mb-6 flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
                 The Threat Landscape
               </span>
             </div>
@@ -81,7 +81,7 @@ const ThreatLandscape = () => {
             <h2 className="mb-8 font-inter text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
               It's Not{" "}
               <span className="text-white/40">If</span>. It's{" "}
-              <span className="text-primary-light">When</span>.
+              <span className="text-primary">When</span>.
             </h2>
 
             <p className="mb-8 max-w-xl text-sm leading-relaxed text-gray-400 sm:text-base md:text-lg">

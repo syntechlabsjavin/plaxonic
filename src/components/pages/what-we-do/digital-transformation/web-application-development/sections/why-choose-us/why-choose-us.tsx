@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
                   <BadgeCheck className="h-6 w-6 text-white" />
                 </div>
 
-                <span className="text-xs font-semibold tracking-[0.18em] text-primary-light uppercase">
+                <span className="text-xs font-semibold tracking-[0.18em] text-primary uppercase">
                   Zero Error Policy
                 </span>
               </div>

@@ -135,7 +135,7 @@ const QualityMetrics = () => {
           }`}
         >
           <div className="mb-6 inline-flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               The Impact
             </span>
           </div>
@@ -161,7 +161,7 @@ const QualityMetrics = () => {
               }}
             >
               {/* Animated Number */}
-              <div className="font-inter text-[clamp(2.5rem,1.8rem+2.6vw,3.75rem)] font-extrabold leading-none tracking-tight text-white transition-colors duration-300 group-hover:text-primary-light">
+              <div className="font-inter text-[clamp(2.5rem,1.8rem+2.6vw,3.75rem)] font-extrabold leading-none tracking-tight text-white transition-colors duration-300 group-hover:text-primary">
                 <span>
                   {metric.prefix}
                   {counts[index]}

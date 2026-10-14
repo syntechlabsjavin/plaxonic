@@ -161,7 +161,7 @@ const ERPImpact: React.FC = () => {
                   size={24}
                   strokeWidth={1.5}
                   aria-hidden="true"
-                  className="mb-5 h-6 w-6 text-gray-500 transition-colors duration-300 group-hover:text-primary-light"
+                  className="mb-5 h-6 w-6 text-gray-500 transition-colors duration-300 group-hover:text-primary"
                 />
 
                 <h3 className="mb-2 text-lg font-semibold text-white">

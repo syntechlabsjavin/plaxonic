@@ -143,7 +143,7 @@ const WhatWeModernize = () => {
           className="mb-10 max-w-3xl sm:mb-14 lg:mb-16"
         >
           <div className="mb-6 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               What We Modernize
             </span>
           </div>
@@ -174,7 +174,7 @@ const WhatWeModernize = () => {
                 className="group relative overflow-hidden border border-white/10 bg-white/[0.03] p-6 transition-all duration-300 hover:border-primary/40 hover:bg-white/[0.05] sm:p-7 lg:p-8"
               >
                 {/* Icon */}
-                <div className="mb-6 flex h-12 w-12 items-center justify-center bg-primary/15 text-primary-light transition-colors duration-300 group-hover:bg-primary/25">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center bg-primary/15 text-primary transition-colors duration-300 group-hover:bg-primary/25">
                   <Icon
                     className="h-6 w-6"
                     strokeWidth={2}

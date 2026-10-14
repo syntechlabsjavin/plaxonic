@@ -197,11 +197,11 @@ const HeroSection = () => {
             {/* Modern card */}
             <div className="modern-card relative min-w-0 border border-primary/30 bg-gradient-to-br from-primary/15 to-[#0c0f15] p-3 sm:p-5 lg:p-6">
               <div className="mb-5 flex items-center gap-2">
-                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center bg-primary/20 text-primary-light">
+                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center bg-primary/20 text-primary">
                   <Cloud size={16} />
                 </span>
 
-                <span className="text-[10px] font-semibold uppercase tracking-wide text-primary-light sm:text-xs">
+                <span className="text-[10px] font-semibold uppercase tracking-wide text-primary sm:text-xs">
                   Modern
                 </span>
               </div>
@@ -216,7 +216,7 @@ const HeroSection = () => {
                     <Icon
                       size={16}
                       aria-hidden="true"
-                      className="flex-shrink-0 text-primary-light"
+                      className="flex-shrink-0 text-primary"
                     />
 
                     <span className="truncate font-mono text-[10px] text-white sm:text-xs">

@@ -196,7 +196,7 @@ const ModernizationMetrics = () => {
           className="mx-auto mb-10 max-w-3xl text-center sm:mb-14 lg:mb-16"
         >
           <div className="mb-6 inline-flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               The Payoff
             </span>
           </div>

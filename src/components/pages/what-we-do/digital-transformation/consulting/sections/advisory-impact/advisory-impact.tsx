@@ -88,7 +88,7 @@ const AdvisoryImpact = () => {
       <div className="relative z-10 mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8 xl:px-16">
         <div className="mb-10 max-w-3xl sm:mb-14 lg:mb-20">
           <div className="mb-6 flex items-center gap-3">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               The Impact
             </span>
           </div>

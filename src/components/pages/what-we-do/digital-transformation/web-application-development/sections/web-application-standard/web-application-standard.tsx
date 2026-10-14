@@ -96,7 +96,7 @@ const WebApplicationStandard = () => {
         >
           As a leading web application development service provider, we approach
           web development as an{" "}
-          <span className="font-medium text-primary-light">
+          <span className="font-medium text-primary">
             engineering solution
           </span>{" "}
           to your business challenges. We engineer custom applications and

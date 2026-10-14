@@ -102,7 +102,7 @@ export default function SupportPlans() {
                 {/* Plan name */}
                 <div
                   className={`mb-3 text-sm font-semibold uppercase tracking-[0.18em] ${
-                    isFeatured ? "text-primary-light" : "text-primary"
+                    isFeatured ? "text-primary" : "text-primary"
                   }`}
                 >
                   {plan.name}

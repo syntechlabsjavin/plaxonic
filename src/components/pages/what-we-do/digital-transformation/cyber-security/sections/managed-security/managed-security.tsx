@@ -17,7 +17,7 @@ const ManagedSecurity = () => {
           {/* Left Content */}
           <div>
             <div className="mb-6 flex items-center gap-3">
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-light">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
                 Managed Security
               </span>
             </div>
@@ -59,7 +59,7 @@ const ManagedSecurity = () => {
             {/* Threats Blocked Card */}
             <div className="absolute -left-4 -top-5 flex items-center gap-3 border border-white/15 bg-white/[0.07] px-4 py-3 backdrop-blur-md sm:-left-6">
               <ShieldCheck
-                className="h-5 w-5 text-primary-light"
+                className="h-5 w-5 text-primary"
                 aria-hidden="true"
               />
 
@@ -76,7 +76,7 @@ const ManagedSecurity = () => {
             {/* Response Time Card */}
             <div className="absolute -right-4 top-1/2 flex -translate-y-1/2 items-center gap-3 border border-white/15 bg-white/[0.07] px-4 py-3 backdrop-blur-md sm:-right-6">
               <Clock
-                className="h-5 w-5 text-primary-light"
+                className="h-5 w-5 text-primary"
                 aria-hidden="true"
               />
 

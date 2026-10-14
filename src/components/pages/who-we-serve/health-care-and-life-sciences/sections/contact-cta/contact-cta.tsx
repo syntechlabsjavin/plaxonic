@@ -12,7 +12,7 @@ const ContactCta = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-10 lg:px-16 text-center">
         <h2 className="font-inter text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
           Build A Healthcare System That{" "}
-          <span className="text-primary-light">Earns Trust</span>.
+          <span className="text-primary">Earns Trust</span>.
         </h2>
 
         <p className="max-w-2xl mx-auto text-gray-300 text-lg leading-relaxed mb-10">
@@ -35,7 +35,7 @@ const ContactCta = () => {
 
           <a
             href="/contact"
-            className="group inline-flex items-center gap-3 border border-white/25 text-white font-semibold px-8 h-14 hover:border-primary-light hover:text-primary-light transition-colors duration-300"
+            className="group inline-flex items-center gap-3 border border-white/25 text-white font-semibold px-8 h-14 hover:border-primary-light hover:text-primary transition-colors duration-300"
           >
             Book A Consultation
             <ArrowRight

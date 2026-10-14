@@ -211,7 +211,7 @@ const WhyCustomSoftware = ({
             <div className="mb-7 flex items-center gap-3 border-b border-primary/20 pb-6">
               <div className="flex h-10 w-10 items-center justify-center rounded bg-primary/20">
                 <Check
-                  className="h-5 w-5 text-primary-light"
+                  className="h-5 w-5 text-primary"
                   aria-hidden="true"
                 />
               </div>
@@ -221,7 +221,7 @@ const WhyCustomSoftware = ({
                   {customTitle}
                 </h3>
 
-                <p className="text-xs text-primary-light/70">
+                <p className="text-xs text-primary">
                   {customSubtitle}
                 </p>
               </div>
@@ -234,7 +234,7 @@ const WhyCustomSoftware = ({
                   className="flex items-start gap-3"
                 >
                   <Check
-                    className="mt-1 h-4 w-4 shrink-0 text-primary-light"
+                    className="mt-1 h-4 w-4 shrink-0 text-primary"
                     aria-hidden="true"
                   />
 

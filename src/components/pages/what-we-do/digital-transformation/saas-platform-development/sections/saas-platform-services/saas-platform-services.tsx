@@ -155,7 +155,7 @@ const SaaSPlatformServices = () => {
                     <h3
                       className={`mb-3 font-inter font-semibold transition-colors duration-300 ${
                         featured
-                          ? "text-2xl text-white group-hover:text-primary-light lg:text-3xl"
+                          ? "text-2xl text-white group-hover:text-primary lg:text-3xl"
                           : "text-lg text-gray-900 group-hover:text-primary"
                       }`}
                     >
