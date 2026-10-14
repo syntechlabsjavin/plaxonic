@@ -35,6 +35,7 @@ import CyberSecurity from "../pages/what-we-do/digital-transformation/cyber-secu
 import QualityEngineering from "../pages/what-we-do/digital-transformation/quality-engineering/quality-engineering";
 import LegacyModerniztion from "../pages/what-we-do/digital-transformation/legacy-modernization/legacy-modernization";
 import AiConsultingServices from "../pages/what-we-do/artificial-intelligence/ai-consulting-services/ai-consulting-services";
+import CoreAiDevelopment from "../pages/what-we-do/artificial-intelligence/core-ai-development/core-ai-development";
 
 const AppRouter = () => {
   return (
@@ -63,6 +64,7 @@ const AppRouter = () => {
 
         {/* Artificial Inteligence AI */}
         <Route path="/services/ai-consulting-services" element={<AiConsultingServices />} />
+        <Route path="/services/core-ai-development" element={<CoreAiDevelopment />} />
 
 
         {/* who we serve */}
