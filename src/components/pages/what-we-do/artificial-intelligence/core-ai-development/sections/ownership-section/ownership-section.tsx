@@ -100,7 +100,7 @@ const OwnershipSection = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
             >
-              {ownershipItems.map((item, index) => (
+              {ownershipItems.map((item) => (
                 <motion.div
                   key={item.title}
                   variants={itemVariants}
