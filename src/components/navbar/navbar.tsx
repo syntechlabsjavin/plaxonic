@@ -5,7 +5,8 @@ import {
   FileCode2, FileText, Globe, GraduationCap, Heart, HeartHandshake, Landmark,
   Layers, Lightbulb, Link2, Menu, Network, Newspaper, PenTool, Plane, Rocket,
   Settings, Shield, Smartphone, Sparkles, Sprout, Star, Target, Trophy,
-  UserPlus, Users, UtensilsCrossed, Wifi, Workflow, X, Zap,
+  BrainCircuit, Cpu, ChartNoAxesColumn, Eye, Bot, Server, ShieldCheck, GitMerge,
+  UserPlus, Users, UtensilsCrossed, Wifi, Workflow, X, Zap, 
   type LucideIcon,
 } from "lucide-react";
 import Logo from "./logo";
@@ -105,38 +106,164 @@ const NAV_ITEMS: NavItem[] = [
       {
         label: "Artificial Intelligence (AI)",
         title: "Artificial Intelligence (AI)",
-        description: "Production-ready AI systems that deliver measurable business impact.",
+        description:
+          "Harness the power of AI to automate, innovate, and transform your business.",
         columns: [
           {
-            heading: "AI Services",
+            heading: "AI Development",
             links: [
-              { label: "AI Consulting & Implementation", href: "/services/ai-consulting-services" },
-              { label: "Agentic AI Services", href: "/services/agentic-ai" },
-              { label: "Generative AI", href: "/services/generative-ai" },
-              { label: "RAG Systems", href: "/services/rag-systems" },
-              { label: "AI Agent Applications", href: "/services/ai-agent-applications" },
-              { label: "Data Science & Analytics", href: "/services/data-science-analytics" },
+              {
+                label: "AI Consulting & Implementation",
+                href: "/services/ai-consulting-services",
+                icon: BrainCircuit,
+              },
+              {
+                label: "Core AI Development/Services",
+                href: "/services/core-ai-development",
+                icon: Cpu,
+              },
+              {
+                label: "Machine Learning",
+                href: "/services/machine-learning",
+                icon: ChartNoAxesColumn,
+              },
+              {
+                label: "Computer Vision",
+                href: "/services/computer-vision",
+                icon: Eye,
+              },
+              {
+                label: "Generative AI",
+                href: "/services/generative-ai",
+                icon: Sparkles,
+              },
+              {
+                label: "RAG Systems",
+                href: "/services/rag-systems",
+                icon: Database,
+              },
+            ],
+          },
+          {
+            heading: "AI Solutions",
+            links: [
+              {
+                label: "AI Chatbot",
+                href: "/services/ai-chatbot",
+                icon: Bot,
+              },
+              {
+                label: "Agentic AI Services",
+                href: "/services/agentic-ai",
+                icon: Zap,
+              },
+              {
+                label: "AI Agent Applications",
+                href: "/services/ai-agent-applications",
+                icon: Workflow,
+              },
+              {
+                label: "AI Infrastructure & Platforms",
+                href: "/services/ai-infrastructure-platforms",
+                icon: Server,
+              },
+              {
+                label: "AI Ethics & Governance",
+                href: "/services/ai-ethics-governance",
+                icon: ShieldCheck,
+              },
             ],
           },
         ],
       },
-      {
-        label: "Cloud & DevOps",
-        title: "Cloud & DevOps",
-        description: "Cloud-native platforms and automation built for scale and reliability.",
-        columns: [
-          {
-            heading: "Cloud & DevOps",
-            links: [
-              { label: "Cloud Migration & Modernization", href: "/services/cloud-migration-modernization" },
-              { label: "Cloud Cost Optimization", href: "/services/cloud-cost-optimization" },
-              { label: "Managed Cloud & DevOps Services", href: "/services/cloud-managed-services" },
-              { label: "Cloud Infrastructure Management", href: "/services/cloud-infrastructure-management" },
-              { label: "DevOps Automation & CI/CD", href: "/services/devops-automation-services" },
-            ],
-          },
-        ],
-      },
+{
+  label: "Cloud & DevOps",
+  title: "Cloud & DevOps",
+  description:
+    "Accelerate delivery and scale infrastructure with modern cloud and DevOps practices.",
+  columns: [
+    {
+      heading: "Cloud Services",
+      links: [
+        {
+          label: "DevOps Consulting & Strategy",
+          href: "/services/devops-consulting-services",
+          icon: Settings,
+        },
+        {
+          label: "Cloud Migration & Modernization",
+          href: "/services/cloud-migration-modernization",
+          icon: Globe,
+        },
+        {
+          label: "Cloud Infrastructure Management",
+          href: "/services/cloud-infrastructure-management",
+          icon: Database,
+        },
+        {
+          label: "Infrastructure as Code (IaC)",
+          href: "/services/infrastructure-as-code",
+          icon: FileCode2,
+        },
+        {
+          label: "DevOps Automation & CI/CD",
+          href: "/services/devops-automation-services",
+          icon: GitMerge,
+        },
+        {
+          label: "Kubernetes & Containerization",
+          href: "/services/containerization-and-kubernetes",
+          icon: Layers,
+        },
+        {
+          label: "Platform Engineering",
+          href: "/services/platform-engineering",
+          icon: Network,
+        },
+      ],
+    },
+    {
+      heading: "Operations & Security",
+      links: [
+        {
+          label: "Networking & Service Mesh",
+          href: "/services/networking-service-mesh",
+          icon: Wifi,
+        },
+        {
+          label: "Database Operations (DBOps)",
+          href: "/services/database-operations",
+          icon: Database,
+        },
+        {
+          label: "DevSecOps & Cloud Security",
+          href: "/services/devsecops-services",
+          icon: Shield,
+        },
+        {
+          label: "Monitoring & Observability",
+          href: "/services/monitoring-and-observability",
+          icon: BarChart2,
+        },
+        {
+          label: "Cloud Cost Optimization (FinOps)",
+          href: "/services/cloud-cost-optimization",
+          icon: Target,
+        },
+        {
+          label: "Managed Cloud & DevOps Services",
+          href: "/services/cloud-managed-services",
+          icon: Settings,
+        },
+        {
+          label: "AI + Cloud & MLOps",
+          href: "/services/mlops-services",
+          icon: BrainCircuit,
+        },
+      ],
+    },
+  ],
+},
       {
         label: "Next-Gen Systems",
         title: "Next-Gen Systems",
@@ -455,26 +582,34 @@ const Navbar = ({ onAskArchI }: NavbarProps) => {
         <div className="hidden lg:block fixed left-0 right-0 top-16 xl:top-20 bottom-0 bg-white border-t border-gray-200">
           <div className="flex h-full">
             {/* Left: categories */}
-            <div className="w-72 shrink-0 border-r border-gray-200 px-4 pt-6 pb-4 overflow-y-auto">
-              <p className="px-4 pb-4 text-sm font-semibold tracking-wider text-gray-500 uppercase">
+
+            <div className="w-[22%] max-w-[410px] min-w-[300px] shrink-0 border-r border-primary/60 px-5 xl:px-6 pt-8 pb-4 overflow-y-auto">
+              <p className="px-4 pb-5 text-sm xl:text-base font-semibold tracking-wider text-gray-400 uppercase">
                 {megaItem.label}
               </p>
-              <ul>
+
+              <ul className="space-y-1">
                 {megaItem.mega!.map((cat) => {
                   const active = cat.label === activeCategory;
+
                   return (
                     <li key={cat.label}>
                       <button
                         type="button"
                         onMouseEnter={() => setActiveCategory(cat.label)}
                         onClick={() => setActiveCategory(cat.label)}
-                        className={`w-full flex items-center justify-between px-4 py-3.5 text-left text-base transition-colors ${
-                          active ? "bg-slate-50 text-primary" : "text-gray-700 hover:text-primary"
+                        className={`w-full flex items-center justify-between px-4 py-4 text-left text-base xl:text-lg transition-colors ${
+                          active
+                            ? "bg-slate-50 text-primary"
+                            : "text-gray-700 hover:text-primary"
                         }`}
                       >
                         <span>{cat.label}</span>
+
                         <ChevronRight
-                          className={`w-4 h-4 ${active ? "text-primary" : "text-gray-400"}`}
+                          className={`w-4 h-4 shrink-0 ${
+                            active ? "text-primary" : "text-gray-400"
+                          }`}
                           aria-hidden="true"
                         />
                       </button>
@@ -484,27 +619,34 @@ const Navbar = ({ onAskArchI }: NavbarProps) => {
               </ul>
             </div>
 
+
             {/* Right: content */}
-            <div className="flex-1 bg-slate-50 px-8 py-8 overflow-y-auto">
-              <h3 className="text-xl font-semibold text-gray-900">{activeMega.title}</h3>
-              <p className="mt-1 text-base text-gray-500">{activeMega.description}</p>
+            <div className="flex-1 min-w-0 bg-slate-50 px-6 xl:px-10 2xl:px-12 py-8 overflow-y-auto">
+              <h3 className="text-xl xl:text-2xl font-semibold text-gray-900">
+                {activeMega.title}
+              </h3>
+
+              <p className="mt-1 text-base xl:text-lg text-gray-500">
+                {activeMega.description}
+              </p>
 
               <div
-                className="mt-8 grid gap-8"
-                style={{ gridTemplateColumns: `repeat(${activeMega.columns.length}, minmax(0, 1fr))` }}
+                className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-x-8 xl:gap-x-12"
               >
                 {activeMega.columns.map((col) => {
                   const isCard = col.links.some((l) => l.description);
+
                   return (
-                    <div key={col.heading}>
-                      <p className="text-sm font-semibold tracking-wider text-gray-500 uppercase">
+                    <div key={col.heading} className="min-w-0">
+                      <p className="text-sm xl:text-base font-semibold tracking-wider text-gray-400 uppercase">
                         {col.heading}
                       </p>
+
                       <ul
                         className={
                           isCard
                             ? "mt-4 bg-white p-6 space-y-6"
-                            : "mt-6 px-2 space-y-6"
+                            : "mt-4 xl:mt-6 px-2 space-y-3 xl:space-y-4"
                         }
                       >
                         {col.links.map((link) => (
