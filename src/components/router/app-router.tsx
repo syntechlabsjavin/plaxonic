@@ -45,13 +45,11 @@ import AgenticAI from "../pages/what-we-do/artificial-intelligence/agentic-ai/ag
 import AIAgentApplications from "../pages/what-we-do/artificial-intelligence/ai-agent-applications/ai-agent-applications";
 import AIInfrastructurePlatforms from "../pages/what-we-do/artificial-intelligence/ai-infrastructure-platforms/ai-infrastructure-platforms";
 import AIEthicsGovernance from "../pages/what-we-do/artificial-intelligence/ai-ethics-governance/ai-ethics-governance";
-// import ThinkItiveNavbar from "../navbar/thinkitive-navbar/thinkitive-navbar";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      {/* <ThinkItiveNavbar /> */}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
