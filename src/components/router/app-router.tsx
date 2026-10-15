@@ -43,11 +43,14 @@ import RAGSystems from "../pages/what-we-do/artificial-intelligence/rag-systems/
 import AIChatbot from "../pages/what-we-do/artificial-intelligence/ai-chatbot/ai-chatbot";
 import AgenticAI from "../pages/what-we-do/artificial-intelligence/agentic-ai/agentic-ai";
 import AIAgentApplications from "../pages/what-we-do/artificial-intelligence/ai-agent-applications/ai-agent-applications";
+import AIInfrastructurePlatforms from "../pages/what-we-do/artificial-intelligence/ai-infrastructure-platforms/ai-infrastructure-platforms";
+// import ThinkItiveNavbar from "../navbar/thinkitive-navbar/thinkitive-navbar";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
       <Navbar />
+      {/* <ThinkItiveNavbar /> */}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -79,6 +82,7 @@ const AppRouter = () => {
         <Route path="/services/ai-chatbot" element={<AIChatbot />} />
         <Route path="/services/agentic-ai" element={<AgenticAI />} />
         <Route path="/services/ai-agent-applications" element={<AIAgentApplications />} />
+        <Route path="/services/ai-infrastructure-platforms" element={<AIInfrastructurePlatforms />} />
 
 
         {/* who we serve */}
