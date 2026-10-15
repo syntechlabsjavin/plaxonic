@@ -42,6 +42,7 @@ import GenerativeAi from "../pages/what-we-do/artificial-intelligence/generative
 import RAGSystems from "../pages/what-we-do/artificial-intelligence/rag-systems/rag-systems";
 import AIChatbot from "../pages/what-we-do/artificial-intelligence/ai-chatbot/ai-chatbot";
 import AgenticAI from "../pages/what-we-do/artificial-intelligence/agentic-ai/agentic-ai";
+import AIAgentApplications from "../pages/what-we-do/artificial-intelligence/ai-agent-applications/ai-agent-applications";
 
 const AppRouter = () => {
   return (
@@ -77,6 +78,7 @@ const AppRouter = () => {
         <Route path="/services/rag-systems" element={<RAGSystems />} />
         <Route path="/services/ai-chatbot" element={<AIChatbot />} />
         <Route path="/services/agentic-ai" element={<AgenticAI />} />
+        <Route path="/services/ai-agent-applications" element={<AIAgentApplications />} />
 
 
         {/* who we serve */}
