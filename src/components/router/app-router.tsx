@@ -39,6 +39,9 @@ import CoreAiDevelopment from "../pages/what-we-do/artificial-intelligence/core-
 import MachineLearning from "../pages/what-we-do/artificial-intelligence/machine-learning/machine-learning";
 import ComputerVision from "../pages/what-we-do/artificial-intelligence/computer-vision/computer-vision";
 import GenerativeAi from "../pages/what-we-do/artificial-intelligence/generative-ai/generative-ai";
+import RAGSystems from "../pages/what-we-do/artificial-intelligence/rag-systems/rag-systems";
+import AIChatbot from "../pages/what-we-do/artificial-intelligence/ai-chatbot/ai-chatbot";
+import AgenticAI from "../pages/what-we-do/artificial-intelligence/agentic-ai/agentic-ai";
 
 const AppRouter = () => {
   return (
@@ -71,6 +74,9 @@ const AppRouter = () => {
         <Route path="/services/machine-learning" element={<MachineLearning />} />
         <Route path="/services/computer-vision" element={<ComputerVision />} />
         <Route path="/services/generative-ai" element={<GenerativeAi />} />
+        <Route path="/services/rag-systems" element={<RAGSystems />} />
+        <Route path="/services/ai-chatbot" element={<AIChatbot />} />
+        <Route path="/services/agentic-ai" element={<AgenticAI />} />
 
 
         {/* who we serve */}
