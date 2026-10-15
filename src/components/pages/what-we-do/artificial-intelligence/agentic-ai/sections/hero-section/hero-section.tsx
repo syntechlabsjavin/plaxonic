@@ -6,6 +6,7 @@ import {
   ChartNoAxesColumn,
   ArrowRight,
 } from "lucide-react";
+import SafetyBg from "../../../../../../../assets/what-we-do/artificial-intelligence/safety-bg.webp";
 
 
 const agentTasks = [
@@ -21,7 +22,7 @@ const HeroSection = () => {
     <section className="relative w-full overflow-hidden bg-[#070809] pt-28 pb-16 sm:pb-20 lg:pt-32 lg:pb-28">
       {/* Background Image */}
       <img
-        src="/agentic-ai/safety-bg.webp"
+        src={SafetyBg}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"
