@@ -44,6 +44,7 @@ import AIChatbot from "../pages/what-we-do/artificial-intelligence/ai-chatbot/ai
 import AgenticAI from "../pages/what-we-do/artificial-intelligence/agentic-ai/agentic-ai";
 import AIAgentApplications from "../pages/what-we-do/artificial-intelligence/ai-agent-applications/ai-agent-applications";
 import AIInfrastructurePlatforms from "../pages/what-we-do/artificial-intelligence/ai-infrastructure-platforms/ai-infrastructure-platforms";
+import AIEthicsGovernance from "../pages/what-we-do/artificial-intelligence/ai-ethics-governance/ai-ethics-governance";
 // import ThinkItiveNavbar from "../navbar/thinkitive-navbar/thinkitive-navbar";
 
 const AppRouter = () => {
@@ -83,6 +84,7 @@ const AppRouter = () => {
         <Route path="/services/agentic-ai" element={<AgenticAI />} />
         <Route path="/services/ai-agent-applications" element={<AIAgentApplications />} />
         <Route path="/services/ai-infrastructure-platforms" element={<AIInfrastructurePlatforms />} />
+        <Route path="/services/ai-ethics-governance" element={<AIEthicsGovernance />} />
 
 
         {/* who we serve */}
