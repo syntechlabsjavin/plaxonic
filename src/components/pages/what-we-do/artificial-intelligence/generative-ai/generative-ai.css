@@ -1,0 +1,58 @@
+/* Slowly drifting hero background */
+@keyframes hero-bg-float {
+  0%,
+  100% {
+    transform: translate3d(-1%, -0.5%, 0) scale(1.2);
+  }
+
+  50% {
+    transform: translate3d(1%, 0.5%, 0) scale(1.24);
+  }
+}
+
+/* Floating generated images */
+@keyframes hero-image-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -14px;
+  }
+}
+
+/* Moving ambient glows */
+@keyframes hero-glow-float {
+  0%,
+  100% {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  50% {
+    translate: 18px -12px;
+    scale: 1.06;
+  }
+}
+
+.hero-bg-animation {
+  animation: hero-bg-float 16s ease-in-out infinite;
+}
+
+.hero-image-animation {
+  animation: hero-image-float 6s ease-in-out infinite;
+}
+
+.hero-glow-animation {
+  animation: hero-glow-float 10s ease-in-out infinite;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-animation,
+  .hero-image-animation,
+  .hero-glow-animation {
+    animation: none !important;
+  }
+}

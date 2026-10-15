@@ -38,6 +38,7 @@ import AiConsultingServices from "../pages/what-we-do/artificial-intelligence/ai
 import CoreAiDevelopment from "../pages/what-we-do/artificial-intelligence/core-ai-development/core-ai-development";
 import MachineLearning from "../pages/what-we-do/artificial-intelligence/machine-learning/machine-learning";
 import ComputerVision from "../pages/what-we-do/artificial-intelligence/computer-vision/computer-vision";
+import GenerativeAi from "../pages/what-we-do/artificial-intelligence/generative-ai/generative-ai";
 
 const AppRouter = () => {
   return (
@@ -69,6 +70,7 @@ const AppRouter = () => {
         <Route path="/services/core-ai-development" element={<CoreAiDevelopment />} />
         <Route path="/services/machine-learning" element={<MachineLearning />} />
         <Route path="/services/computer-vision" element={<ComputerVision />} />
+        <Route path="/services/generative-ai" element={<GenerativeAi />} />
 
 
         {/* who we serve */}

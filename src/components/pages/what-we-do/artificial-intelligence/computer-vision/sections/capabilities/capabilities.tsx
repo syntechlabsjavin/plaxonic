@@ -186,7 +186,7 @@ const Capabilities = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.4fr] gap-8 lg:gap-12">
           {/* Left – capability list */}
           <div className="flex flex-col">
-            {capabilities.map((cap, index) => {
+            {capabilities.map((cap) => {
               const isActive = cap.id === activeId;
               const Icon = cap.icon;
 

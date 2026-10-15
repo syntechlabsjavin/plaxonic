@@ -41,18 +41,6 @@ const fadeUp: Variants = {
   }),
 };
 
-const pulseLine: Variants = {
-  animate: {
-    left: ["-50%", "100%"],
-    transition: {
-      duration: 1.8,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "loop",
-    },
-  },
-};
-
 const EdgeSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#0a0c10] py-16 sm:py-20 md:py-24 lg:py-36">
